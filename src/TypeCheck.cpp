@@ -1,14 +1,12 @@
 #include <iostream>
 #include "TypeCheck.h"
-#include "VisitTypeCheck.h"
-#include "Stella/Absyn.H"
+#include "Visiting.h"
 
-namespace Stella
-{
+namespace Stella {
 
-  void typecheckProgram(Program *program)
-  {
-    program->accept(new VisitTypeCheck());
-  }
+void typecheckProgram(Program *program) {
+    program->accept(new Visiting());
+    return;
+}
 
 } // namespace Stella
