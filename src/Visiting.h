@@ -8,23 +8,37 @@
 #include "Enum.h"
 #include <unordered_map>
 #include "Stella/Absyn.H"
+#include "Stella/Printer.H"
 #include "ObjectType.h"
+
 
 namespace Stella
 {
 
 
-    class Visiting : public Visitor
+class Visiting : public Visitor
     {
     private:
+        Stella::PrintAbsyn printer = Stella::PrintAbsyn();
         std::unordered_map<StellaIdent, ObjectType> contextIdent = {};
 
         ObjectType expected_type ;
 
         std::stack<ObjectType> contexts;
-
     public:
 
+    bool checkReturn(ObjectType actual, ObjectType expected){
+        if(actual == expected){
+            return true;
+        }
+        if(actual.typeTag == MyTypeTag::FunctionTypeTag){
+            return checkReturn(actual.returns[0], expected);
+        }
+        if(actual.typeTag == MyTypeTag::SumTypeTag){
+            return checkReturn(actual.returns[0], expected) && checkReturn(actual.returns[1], expected);
+        }
+        return false;
+    }
 
         void visitProgram(Program *p);
         void visitLanguageDecl(LanguageDecl *p);

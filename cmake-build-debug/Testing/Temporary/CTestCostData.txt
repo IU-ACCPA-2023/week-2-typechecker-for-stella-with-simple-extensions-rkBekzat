@@ -1,0 +1,42 @@
+/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-1.stella 60 4.48799e-05
+/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-2.stella 60 3.06277e-05
+/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-3.stella 60 3.70892e-05
+/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/argument-type-mismatch-1.stella 60 4.22923e-05
+/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/argument-type-mismatch-2.stella 60 4.81147e-05
+/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/argument-type-mismatch-3.stella 60 5.49952e-05
+/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-1.stella 60 0.000130956
+/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-2.stella 60 3.31012e-05
+/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-3.stella 60 8.79451e-05
+/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-4.stella 60 3.54618e-05
+/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-squares-1.stella 59 6.08447e-05
+/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-squares-2.stella 60 3.33259e-05
+/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-succ-1.stella 60 3.05031e-05
+/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-succ-2.stella 60 2.27216e-05
+/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-succ-3.stella 60 4.7797e-05
+/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/shadowed-variable-1.stella 60 3.58739e-05
+/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/undefined-variable-1.stella 60 3.00061e-05
+/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/undefined-variable-2.stella 60 4.7336e-05
+/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/lists/ill-typed/bad-variants-1.stella 60 4.03914e-05
+/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/pairs/ill-typed/bad-pairs-1.stella 58 4.58327e-05
+/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/records/ill-typed/bad-records-1.stella 59 4.87231e-05
+/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/sum-types/ill-typed/bad-sum-types-1.stella 56 5.69879e-05
+/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/tuples/ill-typed/bad-tuples-1.stella 52 0.000100218
+/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/ill-typed/bad-variants-1.stella 60 4.5285e-05
+/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/factorial.stella 55 6.4551e-05
+/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/higher-order-1.stella 55 5.24342e-05
+/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/increment_twice.stella 60 4.07814e-05
+/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/logical-operators.stella 55 5.45624e-05
+/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/squares.stella 55 5.07618e-05
+/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/lists/well-typed/lists-1.stella 0 0
+/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/pairs/well-typed/pairs-1.stella 45 4.7253e-05
+/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/records/well-typed/records-1.stella 1 0
+/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/sum-types/well-typed/sum-types-1.stella 6 0.000447694
+/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/sum-types/well-typed/sum-types-2.stella 6 0.000596362
+/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/tuples/well-typed/tuples-1.stella 51 6.6319e-05
+/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/well-typed/variants-1.stella 0 0
+/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/well-typed/variants-2.stella 0 0
+---
+/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/lists/well-typed/lists-1.stella
+/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/records/well-typed/records-1.stella
+/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/well-typed/variants-1.stella
+/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/well-typed/variants-2.stella

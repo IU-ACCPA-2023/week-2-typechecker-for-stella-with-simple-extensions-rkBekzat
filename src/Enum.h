@@ -8,7 +8,8 @@ namespace Stella {
         BoolTypeTag,
         NatTypeTag,
         FunctionTypeTag,
-        IdentTypeTag,
         UnitTypeTag,
+        TupleTypeTag,
+        SumTypeTag,
     };
 }

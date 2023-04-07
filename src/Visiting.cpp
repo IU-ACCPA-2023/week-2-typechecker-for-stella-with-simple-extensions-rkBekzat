@@ -56,6 +56,7 @@ namespace Stella
             an_extension->listextensionname_->accept(this);
     }
 
+
     void Visiting::visitDeclFun(DeclFun *decl_fun)
     {
         /* Code For DeclFun Goes Here */
@@ -88,10 +89,10 @@ namespace Stella
 
         std::cout << "Fucntion go out: "<< objFunc.returns[0].typeTag << " " << contexts.top().typeTag << "\n" ;
         // checking expected return type and actual return type same or not
-        if(contexts.top().typeTag != objFunc.returns[0].typeTag){
+        if(checkReturn(contexts.top(), objFunc) ){
             std::cout << "ERROR: function should return another type\n";
             std::cout << "Line: " << decl_fun->expr_->line_number << "\n";
-            exit(0);
+            exit(1);
         }
         // map the type for identifier
         contextIdent[decl_fun->stellaident_] = objFunc;
@@ -103,7 +104,7 @@ namespace Stella
     {
         /* Code For DeclTypeAlias Goes Here */
 
-//        std::cout << "DECL TYPE ALIAS: " << decl_type_alias->char_number << " " << decl_type_alias->line_number << "\n";
+        std::cout << "DECL TYPE ALIAS: " << decl_type_alias->char_number << " " << decl_type_alias->line_number << "\n";
         visitStellaIdent(decl_type_alias->stellaident_);
 
 
@@ -114,7 +115,7 @@ namespace Stella
     void Visiting::visitALocalDecl(ALocalDecl *a_local_decl)
     {
         /* Code For ALocalDecl Goes Here */
-//        std::cout << "AlocalDecl\n";
+        std::cout << "AlocalDecl\n";
         if (a_local_decl->decl_)
             a_local_decl->decl_->accept(this);
     }
@@ -122,19 +123,19 @@ namespace Stella
     void Visiting::visitInlineAnnotation(InlineAnnotation *inline_annotation)
     {
         /* Code For InlineAnnotation Goes Here */
-//        std::cout << "visitInlineAnnotation\n";
+        std::cout << "visitInlineAnnotation\n";
 
     }
 
     void Visiting::visitAParamDecl(AParamDecl *a_param_decl)
     {
         /* Code For AParamDecl Goes Here */
-//        std::cout << "visitAParamDecl\n";
+        std::cout << "visitAParamDecl\n";
 
         if (a_param_decl->type_)
             a_param_decl->type_->accept(this);
 
-//        std::cout <<"SET the stellIDENT: "<< a_param_decl->stellaident_ << " " << contexts.top().typeTag << "\n\n";
+        std::cout <<"SET the stellIDENT: "<< a_param_decl->stellaident_ << " " << contexts.top().typeTag << "\n\n";
         contextIdent[a_param_decl->stellaident_] = contexts.top();
         visitStellaIdent(a_param_decl->stellaident_);
         contexts.pop();
@@ -143,13 +144,13 @@ namespace Stella
     void Visiting::visitNoReturnType(NoReturnType *no_return_type)
     {
         /* Code For NoReturnType Goes Here */
-//        std::cout << "visitNoReturnType\n";
+        std::cout << "visitNoReturnType\n";
     }
 
     void Visiting::visitSomeReturnType(SomeReturnType *some_return_type)
     {
         /* Code For SomeReturnType Goes Here */
-//        std::cout << "SomereturnType\n";
+        std::cout << "SomereturnType\n";
         if (some_return_type->type_)
             some_return_type->type_->accept(this);
     }
@@ -157,12 +158,13 @@ namespace Stella
     void Visiting::visitNoThrowType(NoThrowType *no_throw_type)
     {
         /* Code For NoThrowType Goes Here */
+        std::cout << "visitNoThrowType\n";
     }
 
     void Visiting::visitSomeThrowType(SomeThrowType *some_throw_type)
     {
         /* Code For SomeThrowType Goes Here */
-
+        std::cout << "visitSomeThrowType\n";
         if (some_throw_type->listtype_)
             some_throw_type->listtype_->accept(this);
     }
@@ -170,7 +172,8 @@ namespace Stella
     void Visiting::visitIf(If *if_)
     {
         /* Code For If Goes Here */
-//        std::cout << "VisitIf\n";
+        std::cout << "VisitIf\n";
+
         if (if_->expr_1)
             if_->expr_1->accept(this);
         // here in contexts.top() will store type of expr1
@@ -220,17 +223,27 @@ namespace Stella
     void Visiting::visitLet(Let *let)
     {
         /* Code For Let Goes Here */
-//        std::cout << "Let " << let->stellaident_  << "\n";
+        std::cout << "visitLet\n";
         if (let->listpatternbinding_)
             let->listpatternbinding_->accept(this);
         if (let->expr_)
             let->expr_->accept(this);
     }
 
+    void Visiting::visitLetRec(LetRec *let_rec)
+    {
+        /* Code For LetRec Goes Here */
+        std::cout << "visitLetRec\n";
+        if (let_rec->listpatternbinding_)
+            let_rec->listpatternbinding_->accept(this);
+        if (let_rec->expr_)
+            let_rec->expr_->accept(this);
+    }
+
     void Visiting::visitLessThan(LessThan *less_than)
     {
         /* Code For LessThan Goes Here */
-//        std::cout << "LessThan\n";
+        std::cout << "LessThan\n";
         if (less_than->expr_1)
             less_than->expr_1->accept(this);
         if (less_than->expr_2)
@@ -240,7 +253,7 @@ namespace Stella
     void Visiting::visitLessThanOrEqual(LessThanOrEqual *less_than_or_equal)
     {
         /* Code For LessThanOrEqual Goes Here */
-//        std::cout << "LessOrEqual\n";
+        std::cout << "LessOrEqual\n";
         if (less_than_or_equal->expr_1)
             less_than_or_equal->expr_1->accept(this);
         if (less_than_or_equal->expr_2)
@@ -250,7 +263,7 @@ namespace Stella
     void Visiting::visitGreaterThan(GreaterThan *greater_than)
     {
         /* Code For GreaterThan Goes Here */
-
+        std::cout << "visitGreaterThan\n";
         if (greater_than->expr_1)
             greater_than->expr_1->accept(this);
         if (greater_than->expr_2)
@@ -260,7 +273,7 @@ namespace Stella
     void Visiting::visitGreaterThanOrEqual(GreaterThanOrEqual *greater_than_or_equal)
     {
         /* Code For GreaterThanOrEqual Goes Here */
-//        std::cout << "GreaterOrEqual\n";
+        std::cout << "GreaterOrEqual\n";
         if (greater_than_or_equal->expr_1)
             greater_than_or_equal->expr_1->accept(this);
         if (greater_than_or_equal->expr_2)
@@ -270,7 +283,7 @@ namespace Stella
     void Visiting::visitEqual(Equal *equal)
     {
         /* Code For Equal Goes Here */
-//        std::cout << "Equal\n";
+        std::cout << "Equal\n";
         if (equal->expr_1)
             equal->expr_1->accept(this);
         if (equal->expr_2)
@@ -280,7 +293,7 @@ namespace Stella
     void Visiting::visitNotEqual(NotEqual *not_equal)
     {
         /* Code For NotEqual Goes Here */
-//        std::cout << "NotEqual ";
+        std::cout << "NotEqual ";
         if (not_equal->expr_1)
             not_equal->expr_1->accept(this);
         if (not_equal->expr_2)
@@ -290,7 +303,7 @@ namespace Stella
     void Visiting::visitTypeAsc(TypeAsc *type_asc)
     {
         /* Code For TypeAsc Goes Here */
-//        std::cout << "visitTypeAsc\n";
+        std::cout << "visitTypeAsc\n";
         if (type_asc->expr_)
             type_asc->expr_->accept(this);
         if (type_asc->type_)
@@ -300,7 +313,7 @@ namespace Stella
     void Visiting::visitAbstraction(Abstraction *abstraction)
     {
         /* Code For Abstraction Goes Here */
-//        std::cout << "visitAbstraction\n";
+        std::cout << "visitAbstraction\n";
         int sizeBefore = contexts.size(); // this variable need to recognize how many params declared
         ObjectType obj(MyTypeTag::FunctionTypeTag);
         if (abstraction->listparamdecl_)
@@ -327,15 +340,22 @@ namespace Stella
     void Visiting::visitTuple(Tuple *tuple)
     {
         /* Code For Tuple Goes Here */
-//        std::cout << "visitTuple\n";
+        std::cout << "visitTuple\n";
+        int sizedBefore = contexts.size();
         if (tuple->listexpr_)
             tuple->listexpr_->accept(this);
+        ObjectType objTuple(MyTypeTag::TupleTypeTag);
+        while(sizedBefore < contexts.size()){
+            objTuple.params.push_back(contexts.top());
+            contexts.pop();
+        }
+        contexts.push(objTuple);
     }
 
     void Visiting::visitRecord(Record *record)
     {
         /* Code For Record Goes Here */
-//        std::cout << "visitRecord\n";
+        std::cout << "visitRecord\n";
         if (record->listbinding_)
             record->listbinding_->accept(this);
     }
@@ -343,7 +363,7 @@ namespace Stella
     void Visiting::visitVariant(Variant *variant)
     {
         /* Code For Variant Goes Here */
-//        std::cout << "visitVariant\n";
+        std::cout << "visitVariant\n";
         visitStellaIdent(variant->stellaident_);
         if (variant->exprdata_)
             variant->exprdata_->accept(this);
@@ -352,9 +372,17 @@ namespace Stella
     void Visiting::visitMatch(Match *match)
     {
         /* Code For Match Goes Here */
-//        std::cout << "visitMatch\n";
+        std::cout << "visitMatch\n";
         if (match->expr_)
             match->expr_->accept(this);
+        if(contexts.top().typeTag != MyTypeTag::SumTypeTag){
+            std::cout << "ERROR: It's not sum type. On line" << match->line_number << " at position: " << match->char_number << "\n" ;
+            exit(1);
+        }
+        // here in contexts.top() will store sum types, where params vector will store object types which we will sums
+        // inl is contexts.top().params[0]
+        // inr is contexts.top().params[1]
+
         if (match->listmatchcase_)
             match->listmatchcase_->accept(this);
     }
@@ -362,7 +390,7 @@ namespace Stella
     void Visiting::visitList(List *list)
     {
         /* Code For List Goes Here */
-//        std::cout << "visitList\n";
+        std::cout << "visitList\n";
         if (list->listexpr_)
             list->listexpr_->accept(this);
     }
@@ -370,17 +398,27 @@ namespace Stella
     void Visiting::visitAdd(Add *add)
     {
         /* Code For Add Goes Here */
-//        std::cout << "visitAdd\n";
+        std::cout << "visitAdd\n";
         if (add->expr_1)
             add->expr_1->accept(this);
         if (add->expr_2)
             add->expr_2->accept(this);
     }
 
+    void Visiting::visitSubtract(Subtract *subtract)
+    {
+        /* Code For Subtract Goes Here */
+        std::cout << "visitSubtract\n";
+        if (subtract->expr_1)
+            subtract->expr_1->accept(this);
+        if (subtract->expr_2)
+            subtract->expr_2->accept(this);
+    }
+
     void Visiting::visitLogicOr(LogicOr *logic_or)
     {
         /* Code For LogicOr Goes Here */
-//        std::cout << "visitLogicOr\n";
+        std::cout << "visitLogicOr\n";
         if (logic_or->expr_1)
             logic_or->expr_1->accept(this);
         if (logic_or->expr_2)
@@ -390,17 +428,27 @@ namespace Stella
     void Visiting::visitMultiply(Multiply *multiply)
     {
         /* Code For Multiply Goes Here */
-
+        std::cout << "visitMultiply\n";
         if (multiply->expr_1)
             multiply->expr_1->accept(this);
         if (multiply->expr_2)
             multiply->expr_2->accept(this);
     }
 
+    void Visiting::visitDivide(Divide *divide)
+    {
+        /* Code For Divide Goes Here */
+        std::cout << "visitDivide\n";
+        if (divide->expr_1)
+            divide->expr_1->accept(this);
+        if (divide->expr_2)
+            divide->expr_2->accept(this);
+    }
+
     void Visiting::visitLogicAnd(LogicAnd *logic_and)
     {
         /* Code For LogicAnd Goes Here */
-//        std::cout << "visitLogicAnd\n";
+        std::cout << "visitLogicAnd\n";
         if (logic_and->expr_1)
             logic_and->expr_1->accept(this);
         if (logic_and->expr_2)
@@ -410,7 +458,7 @@ namespace Stella
     void Visiting::visitApplication(Application *application)
     {
         /* Code For Application Goes Here */
-//        std::cout << "visitApplication\n";
+        std::cout << "visitApplication\n";
         if (application->expr_)
             application->expr_->accept(this);
         // contexts.top() should function
@@ -452,7 +500,7 @@ namespace Stella
     void Visiting::visitConsList(ConsList *cons_list)
     {
         /* Code For ConsList Goes Here */
-//        std::cout << "visitConsList\n";
+        std::cout << "visitConsList\n";
         if (cons_list->expr_1)
             cons_list->expr_1->accept(this);
         if (cons_list->expr_2)
@@ -462,7 +510,7 @@ namespace Stella
     void Visiting::visitHead(Head *head)
     {
         /* Code For Head Goes Here */
-//        std::cout << "visitHead\n";
+        std::cout << "visitHead\n";
         if (head->expr_)
             head->expr_->accept(this);
     }
@@ -470,7 +518,7 @@ namespace Stella
     void Visiting::visitIsEmpty(IsEmpty *is_empty)
     {
         /* Code For IsEmpty Goes Here */
-//        std::cout << "visitIsEmpty\n";
+        std::cout << "visitIsEmpty\n";
         if (is_empty->expr_)
             is_empty->expr_->accept(this);
     }
@@ -478,7 +526,7 @@ namespace Stella
     void Visiting::visitTail(Tail *tail)
     {
         /* Code For Tail Goes Here */
-//        std::cout << "visitTail";
+        std::cout << "visitTail";
         if (tail->expr_)
             tail->expr_->accept(this);
     }
@@ -487,22 +535,33 @@ namespace Stella
     {
         /* Code For Inl Goes Here */
 
+        std::cout << "visitInl\n";
+        ObjectType objectSum(MyTypeTag::SumTypeTag);
         if (inl->expr_)
         inl->expr_->accept(this);
+        objectSum.params.push_back(contexts.top());
+        objectSum.params.push_back(ObjectType(MyTypeTag::UndefinedTag));
+        contexts.pop();
+        contexts.push(objectSum);
     }
 
     void Visiting::visitInr(Inr *inr)
     {
         /* Code For Inr Goes Here */
-
+        std::cout << "visitInr\n";
+        ObjectType objectSum(MyTypeTag::SumTypeTag);
+        objectSum.params.push_back(ObjectType(MyTypeTag::UndefinedTag));
         if (inr->expr_)
         inr->expr_->accept(this);
+        objectSum.params.push_back(contexts.top());
+        contexts.pop();
+        contexts.push(objectSum);
     }
 
     void Visiting::visitSucc(Succ *succ)
     {
         /* Code For Succ Goes Here */
-//        std::cout << "visitSucc\n";
+        std::cout << "visitSucc\n";
         if (succ->expr_)
             succ->expr_->accept(this);
 
@@ -516,7 +575,7 @@ namespace Stella
     void Visiting::visitLogicNot(LogicNot *logic_not)
     {
         /* Code For LogicNot Goes Here */
-//        std::cout << "visitLogicNot\n";
+        std::cout << "visitLogicNot\n";
         if (logic_not->expr_)
             logic_not->expr_->accept(this);
     }
@@ -524,7 +583,7 @@ namespace Stella
     void Visiting::visitPred(Pred *pred)
     {
         /* Code For Pred Goes Here */
-//        std::cout << "visitPred\n";
+        std::cout << "visitPred\n";
         if (pred->expr_)
             pred->expr_->accept(this);
     }
@@ -532,7 +591,7 @@ namespace Stella
     void Visiting::visitIsZero(IsZero *is_zero)
     {
         /* Code For IsZero Goes Here */
-//        std::cout << "visitIsZero\n";
+        std::cout << "visitIsZero\n";
 
         if (is_zero->expr_)
             is_zero->expr_->accept(this);
@@ -541,7 +600,7 @@ namespace Stella
     void Visiting::visitFix(Fix *fix)
     {
         /* Code For Fix Goes Here */
-//        std::cout << "visitFix\n";
+        std::cout << "visitFix\n";
 
         if (fix->expr_)
             fix->expr_->accept(this);
@@ -550,7 +609,7 @@ namespace Stella
     void Visiting::visitNatRec(NatRec *nat_rec)
     {
         /* Code For NatRec Goes Here */
-//        std::cout << "visitNatRec\n";
+        std::cout << "visitNatRec\n";
         ObjectType objRec(MyTypeTag::UndefinedTag); // at the beginning no info which type will return, I will set later
         int sizedBefore = contexts.size(); // help to recognize list of expresion in first expr
         if (nat_rec->expr_1)
@@ -626,7 +685,7 @@ namespace Stella
     void Visiting::visitFold(Fold *fold)
     {
         /* Code For Fold Goes Here */
-//        std::cout << "visitFold\n";
+        std::cout << "visitFold\n";
 
         if (fold->type_)
             fold->type_->accept(this);
@@ -637,7 +696,7 @@ namespace Stella
     void Visiting::visitUnfold(Unfold *unfold)
     {
         /* Code For Unfold Goes Here */
-//        std::cout << "visitUnfold\n";
+        std::cout << "visitUnfold\n";
 
         if (unfold->type_)
             unfold->type_->accept(this);
@@ -648,7 +707,7 @@ namespace Stella
     void Visiting::visitDotRecord(DotRecord *dot_record)
     {
         /* Code For DotRecord Goes Here */
-//        std::cout << "visitDotRecord\n";
+        std::cout << "visitDotRecord\n";
 
         if (dot_record->expr_)
             dot_record->expr_->accept(this);
@@ -658,24 +717,46 @@ namespace Stella
     void Visiting::visitDotTuple(DotTuple *dot_tuple)
     {
         /* Code For DotTuple Goes Here */
-//        std::cout << "visitDotTuple\n";
+        std::cout << "visitDotTuple\n";
 
         if (dot_tuple->expr_)
             dot_tuple->expr_->accept(this);
+
+        if (contexts.top().typeTag != MyTypeTag::TupleTypeTag){
+            std::cout << "ERROR: it's not tuple, on line: " << dot_tuple->line_number << " at position: " << dot_tuple->char_number << "\n";
+            exit(1);
+        }
         visitInteger(dot_tuple->integer_);
+        if(contexts.top().typeTag != MyTypeTag::NatTypeTag){
+            std::cout << "ERROR: Should integer, on line: " << dot_tuple->line_number << "\n";
+            exit(1);
+        }
+        int position = contexts.top().data;
+        contexts.pop();
+        if(position == -1) {
+            std::cout << "SOMETHING WRONG\n";
+            exit(1);
+        }
+        if(position > contexts.top().params.size()){
+            std::cout << "ERROR: Out of range\n";
+            exit(1);
+        }
+        ObjectType newObj = contexts.top().params[position-1];
+        contexts.pop();
+        contexts.push(newObj);
     }
 
     void Visiting::visitConstTrue(ConstTrue *const_true)
     {
         /* Code For ConstTrue Goes Here */
-//        std::cout << "ConstTrue \n";
+        std::cout << "ConstTrue \n";
         contexts.push(ObjectType(MyTypeTag::BoolTypeTag));
     }
 
     void Visiting::visitConstFalse(ConstFalse *const_false)
     {
         /* Code For ConstFalse Goes Here */
-//        std::cout << "ConstFalse\n";
+        std::cout << "ConstFalse\n";
         contexts.push(ObjectType(MyTypeTag::BoolTypeTag));
     }
 
@@ -687,7 +768,7 @@ namespace Stella
     void Visiting::visitConstInt(ConstInt *const_int)
     {
         /* Code For ConstInt Goes Here */
-//        std::cout << "ConstInt\n";
+        std::cout << "ConstInt\n";
 
         visitInteger(const_int->integer_);
     }
@@ -695,7 +776,7 @@ namespace Stella
     void Visiting::visitVar(Var *var)
     {
         /* Code For Var Goes Here */
-//        std::cout << "visitVar\n";
+        std::cout << "visitVar\n";
 //        expected_type = contextIdent[var->stellaident_];
 
 //        std::cout << "MyTag is the: " <<
@@ -704,27 +785,49 @@ namespace Stella
 
     }
 
+    void Visiting::visitAPatternBinding(APatternBinding *a_pattern_binding)
+    {
+        /* Code For APatternBinding Goes Here */
+        std::cout << "visitAPatternBinding\n";
+        if (a_pattern_binding->pattern_)
+            a_pattern_binding->pattern_->accept(this);
+        if (a_pattern_binding->expr_)
+            a_pattern_binding->expr_->accept(this);
+    }
+
     void Visiting::visitAMatchCase(AMatchCase *a_match_case)
     {
         /* Code For AMatchCase Goes Here */
-//        std::cout << "visitAMatchCase\n";
+        std::cout << "visitAMatchCase\n";
 
         if (a_match_case->pattern_)
             a_match_case->pattern_->accept(this);
+        std::cout << "BEFORE EXPR:\n" << contexts.top().typeTag << "\n\n";
+        ObjectType objSum = contexts.top();
+        int sizeBefore = contexts.size();
         if (a_match_case->expr_)
             a_match_case->expr_->accept(this);
+        std::cout << "MAY BE RETURN TYPE:\n";
+        while (sizeBefore < contexts.size()){
+            objSum.returns.push_back(contexts.top());
+            contexts.pop();
+        }
+        // to assign return to sumtype I delete from context, and add upd objSum
+        contexts.pop();
+        contexts.push(objSum);
+        std::cout << "AFTER EXPR: " << sizeBefore <<" "<<contexts.size()  << " " << contexts.top().typeTag<< "\n";
     }
 
     void Visiting::visitNoTyping(NoTyping *no_typing)
     {
         /* Code For NoTyping Goes Here */
-//        std::cout << "visitNoTyping\n";
+        std::cout << "visitNoTyping\n";
     }
 
     void Visiting::visitSomeTyping(SomeTyping *some_typing)
     {
         /* Code For SomeTyping Goes Here */
-//        std::cout << "visitSomeTyping\n";
+        std::cout << "visitSomeTyping\n";
 
         if (some_typing->type_)
             some_typing->type_->accept(this);
@@ -733,13 +836,13 @@ namespace Stella
     void Visiting::visitNoPatternData(NoPatternData *no_pattern_data)
     {
         /* Code For NoPatternData Goes Here */
-//        std::cout << "visitNoPatternData\n";
+        std::cout << "visitNoPatternData\n";
     }
 
     void Visiting::visitSomePatternData(SomePatternData *some_pattern_data)
     {
         /* Code For SomePatternData Goes Here */
-//        std::cout << "visitSomePatternData\n";
+        std::cout << "visitSomePatternData\n";
 
         if (some_pattern_data->pattern_)
             some_pattern_data->pattern_->accept(this);
@@ -748,13 +851,13 @@ namespace Stella
     void Visiting::visitNoExprData(NoExprData *no_expr_data)
     {
         /* Code For NoExprData Goes Here */
-//        std::cout << "NoExprData\n";
+        std::cout << "visitNoExprData\n";
     }
 
     void Visiting::visitSomeExprData(SomeExprData *some_expr_data)
     {
         /* Code For SomeExprData Goes Here */
-//        std::cout << "SomeExprData\n";
+        std::cout << "visitSomeExprData\n";
         if (some_expr_data->expr_)
             some_expr_data->expr_->accept(this);
     }
@@ -762,7 +865,7 @@ namespace Stella
     void Visiting::visitPatternVariant(PatternVariant *pattern_variant)
     {
         /* Code For PatternVariant Goes Here */
-//        std::cout << "visitPatternVariant\n";
+        std::cout << "visitPatternVariant\n";
 
         visitStellaIdent(pattern_variant->stellaident_);
         if (pattern_variant->patterndata_)
@@ -772,7 +875,10 @@ namespace Stella
     void Visiting::visitPatternInl(PatternInl *pattern_inl)
     {
         /* Code For PatternInl Goes Here */
-
+        std::cout << "visitPatternInl\n";
+        int sizedBefore = contexts.size();
+        ObjectType objSumL = contexts.top();
+        contexts.push(objSumL.params[0]);
         if (pattern_inl->pattern_)
         pattern_inl->pattern_->accept(this);
     }
@@ -780,7 +886,9 @@ namespace Stella
     void Visiting::visitPatternInr(PatternInr *pattern_inr)
     {
         /* Code For PatternInr Goes Here */
-
+        std::cout << "visitPatternInr\n";
+        ObjectType objSumR = contexts.top();
+        contexts.push(objSumR.params[1]);
         if (pattern_inr->pattern_)
         pattern_inr->pattern_->accept(this);
     }
@@ -788,7 +896,7 @@ namespace Stella
     void Visiting::visitPatternTuple(PatternTuple *pattern_tuple)
     {
         /* Code For PatternTuple Goes Here */
-//        std::cout << "visitPatternTuple\n";
+        std::cout << "visitPatternTuple\n";
 
         if (pattern_tuple->listpattern_)
             pattern_tuple->listpattern_->accept(this);
@@ -797,7 +905,7 @@ namespace Stella
     void Visiting::visitPatternRecord(PatternRecord *pattern_record)
     {
         /* Code For PatternRecord Goes Here */
-//        std::cout << "visitPatternRecord\n";
+        std::cout << "visitPatternRecord\n";
 
         if (pattern_record->listlabelledpattern_)
             pattern_record->listlabelledpattern_->accept(this);
@@ -806,7 +914,7 @@ namespace Stella
     void Visiting::visitPatternList(PatternList *pattern_list)
     {
         /* Code For PatternList Goes Here */
-//        std::cout << "visitPatternList\n";
+        std::cout << "visitPatternList\n";
 
         if (pattern_list->listpattern_)
             pattern_list->listpattern_->accept(this);
@@ -815,7 +923,7 @@ namespace Stella
     void Visiting::visitPatternCons(PatternCons *pattern_cons)
     {
         /* Code For PatternCons Goes Here */
-//        std::cout << "visitPatternCons\n";
+        std::cout << "visitPatternCons\n";
 
         if (pattern_cons->pattern_1)
             pattern_cons->pattern_1->accept(this);
@@ -826,19 +934,25 @@ namespace Stella
     void Visiting::visitPatternFalse(PatternFalse *pattern_false)
     {
         /* Code For PatternFalse Goes Here */
-//        std::cout << "visitPatternFalse\n";
+        std::cout << "visitPatternFalse\n";
     }
 
     void Visiting::visitPatternTrue(PatternTrue *pattern_true)
     {
         /* Code For PatternTrue Goes Here */
-//        std::cout << "visitPatternTrue\n";
+        std::cout << "visitPatternTrue\n";
+    }
+
+    void Visiting::visitPatternUnit(PatternUnit *pattern_unit)
+    {
+        /* Code For PatternUnit Goes Here */
+        std::cout << "visitPatternUnit\n";
     }
 
     void Visiting::visitPatternInt(PatternInt *pattern_int)
     {
         /* Code For PatternInt Goes Here */
-//        std::cout << "visitPatternInt\n";
+        std::cout << "visitPatternInt\n";
 
         visitInteger(pattern_int->integer_);
     }
@@ -846,7 +960,7 @@ namespace Stella
     void Visiting::visitPatternSucc(PatternSucc *pattern_succ)
     {
         /* Code For PatternSucc Goes Here */
-//        std::cout << "visitPatternSucc\n";
+        std::cout << "visitPatternSucc\n";
 
         if (pattern_succ->pattern_)
             pattern_succ->pattern_->accept(this);
@@ -855,15 +969,19 @@ namespace Stella
     void Visiting::visitPatternVar(PatternVar *pattern_var)
     {
         /* Code For PatternVar Goes Here */
-//        std::cout << "visitPatternVar\n";
-
+        std::cout << "visitPatternVar\n";
+        std::cout << "ASSIGN: " << pattern_var->stellaident_ << " " << contexts.top().typeTag  << "\n";
+        contextIdent[pattern_var->stellaident_] = contexts.top();
+        contexts.pop();
+        std::cout << "NEXT: "  << contexts.top().typeTag << "\n\n";
         visitStellaIdent(pattern_var->stellaident_);
+        contexts.pop();
     }
 
     void Visiting::visitALabelledPattern(ALabelledPattern *a_labelled_pattern)
     {
         /* Code For ALabelledPattern Goes Here */
-//        std::cout << "visitALabelledPattern\n";
+        std::cout << "visitALabelledPattern\n";
 
         visitStellaIdent(a_labelled_pattern->stellaident_);
         if (a_labelled_pattern->pattern_)
@@ -873,17 +991,28 @@ namespace Stella
     void Visiting::visitABinding(ABinding *a_binding)
     {
         /* Code For ABinding Goes Here */
-//        std::cout << "visitABinding\n";
+        std::cout << "visitABinding\n";
 
         visitStellaIdent(a_binding->stellaident_);
         if (a_binding->expr_)
             a_binding->expr_->accept(this);
     }
 
+    void Visiting::visitSequence(Sequence *sequence)
+    {
+        /* Code For Sequence Goes Here */
+        std::cout << "visitSequence\n";
+        if (sequence->expr_1)
+            sequence->expr_1->accept(this);
+        if (sequence->expr_2)
+            sequence->expr_2->accept(this);
+    }
+
     void Visiting::visitTypeFun(TypeFun *type_fun)
     {
         /* Code For TypeFun Goes Here */
-//        std::cout << "visitTypeFun\n";
+        std::cout << "visitTypeFun\n";
+
         int sizeBefore = contexts.size();
         ObjectType obj = ObjectType(MyTypeTag::FunctionTypeTag);
         if (type_fun->listtype_)
@@ -904,7 +1033,7 @@ namespace Stella
     void Visiting::visitTypeRec(TypeRec *type_rec)
     {
         /* Code For TypeRec Goes Here */
-//        std::cout << "VisitRec\n";
+        std::cout << "VisitRec\n";
 
         visitStellaIdent(type_rec->stellaident_);
 
@@ -921,27 +1050,38 @@ namespace Stella
     void Visiting::visitTypeSum(TypeSum *type_sum)
     {
         /* Code For TypeSum Goes Here */
-//        std::cout << "visitTypeSum\n";
-
+        std::cout << "visitTypeSum\n";
+        ObjectType objSum(MyTypeTag::SumTypeTag);
         if (type_sum->type_1)
             type_sum->type_1->accept(this);
+        objSum.params.push_back(contexts.top());
+        contexts.pop();
         if (type_sum->type_2)
             type_sum->type_2->accept(this);
+        objSum.params.push_back(contexts.top());
+        contexts.pop();
+        contexts.push(objSum);
     }
 
     void Visiting::visitTypeTuple(TypeTuple *type_tuple)
     {
         /* Code For TypeTuple Goes Here */
-//        std::cout << "visitTypeTuple\n";
-
+        std::cout << "visitTypeTuple\n";
+        int sizedBefore = contexts.size();
+        ObjectType objTuple(MyTypeTag::TupleTypeTag);
         if (type_tuple->listtype_)
             type_tuple->listtype_->accept(this);
+        while(contexts.size() > sizedBefore){
+            objTuple.params.push_back(contexts.top());
+            contexts.pop();
+        }
+        contexts.push(objTuple);
     }
 
 void Visiting::visitTypeRecord(TypeRecord *type_record)
     {
         /* Code For TypeRecord Goes Here */
-//        std::cout << "visitTypeRecord\n";
+        std::cout << "visitTypeRecord\n";
 
 
         if (type_record->listrecordfieldtype_)
@@ -951,7 +1091,7 @@ void Visiting::visitTypeRecord(TypeRecord *type_record)
     void Visiting::visitTypeVariant(TypeVariant *type_variant)
     {
         /* Code For TypeVariant Goes Here */
-//        std::cout << "visitTypeVariant\n";
+        std::cout << "visitTypeVariant\n";
 
         if (type_variant->listvariantfieldtype_)
             type_variant->listvariantfieldtype_->accept(this);
@@ -960,7 +1100,7 @@ void Visiting::visitTypeRecord(TypeRecord *type_record)
     void Visiting::visitTypeList(TypeList *type_list)
     {
         /* Code For TypeList Goes Here */
-//        std::cout << "visitTypeList\n";
+        std::cout << "visitTypeList\n";
 
         if (type_list->type_)
             type_list->type_->accept(this);
@@ -969,14 +1109,16 @@ void Visiting::visitTypeRecord(TypeRecord *type_record)
     void Visiting::visitTypeBool(TypeBool *type_bool)
     {
         /* Code For TypeBool Goes Here */
-//        std::cout << "visitBool\n";
+        std::cout << "visitBool\n";
+        printer.visitTypeBool(type_bool);
+        std::cout << "AMAZING WOKR: " << printer.print(type_bool) << "\n\n";
         contexts.push(ObjectType(MyTypeTag::BoolTypeTag));
 
     }
 
     void Visiting::visitTypeNat(TypeNat *type_nat)
     {
-//        std::cout << "Visiting NAT: " << type_nat->line_number << "  "<< type_nat->char_number << "\n";
+        std::cout << "Visiting NAT: " << type_nat->line_number << "  "<< type_nat->char_number << "\n";
         /* Code For TypeNat Goes Here */
         contexts.push(ObjectType(MyTypeTag::NatTypeTag));
     }
@@ -992,7 +1134,7 @@ void Visiting::visitTypeRecord(TypeRecord *type_record)
     void Visiting::visitTypeVar(TypeVar *type_var)
     {
         /* Code For TypeVar Goes Here */
-//        std::cout << "VAR type\n";
+        std::cout << "visitTypeVar\n";
         visitStellaIdent(type_var->stellaident_);
         if(contexts.top().typeTag == MyTypeTag::UndefinedTag){
             std::cout << "ERROR: undefined variable on: " << type_var->line_number << "\n";
@@ -1004,7 +1146,7 @@ void Visiting::visitTypeRecord(TypeRecord *type_record)
     void Visiting::visitAVariantFieldType(AVariantFieldType *a_variant_field_type)
     {
         /* Code For AVariantFieldType Goes Here */
-//        std::cout << "visitAVariantFieldType\n";
+        std::cout << "visitAVariantFieldType\n";
 
         visitStellaIdent(a_variant_field_type->stellaident_);
         if (a_variant_field_type->optionaltyping_)
@@ -1014,7 +1156,7 @@ void Visiting::visitTypeRecord(TypeRecord *type_record)
     void Visiting::visitARecordFieldType(ARecordFieldType *a_record_field_type)
     {
         /* Code For ARecordFieldType Goes Here */
-//        std::cout << "visitARecordFieldType\n";
+        std::cout << "visitARecordFieldType\n";
 
         visitStellaIdent(a_record_field_type->stellaident_);
         if (a_record_field_type->type_)
@@ -1024,7 +1166,7 @@ void Visiting::visitTypeRecord(TypeRecord *type_record)
     void Visiting::visitATyping(ATyping *a_typing)
     {
         /* Code For ATyping Goes Here */
-//        std::cout << "Typing: \n";
+        std::cout << "visitATyping: \n";
 
         if (a_typing->expr_)
             a_typing->expr_->accept(this);
@@ -1034,7 +1176,7 @@ void Visiting::visitTypeRecord(TypeRecord *type_record)
 
     void Visiting::visitListStellaIdent(ListStellaIdent *list_stella_ident)
     {
-//        std::cout << "visitListStellaIdent: \n";
+        std::cout << "visitListStellaIdent: \n";
         for (ListStellaIdent::iterator i = list_stella_ident->begin(); i != list_stella_ident->end(); ++i)
         {
             visitStellaIdent(*i);
@@ -1062,7 +1204,7 @@ void Visiting::visitTypeRecord(TypeRecord *type_record)
 
     void Visiting::visitListDecl(ListDecl *list_decl)
     {
-//        std::cout << "visitListDecl: \n";
+        std::cout << "visitListDecl: \n";
         for (ListDecl::iterator i = list_decl->begin(); i != list_decl->end(); ++i)
         {
             (*i)->accept(this);
@@ -1071,7 +1213,7 @@ void Visiting::visitTypeRecord(TypeRecord *type_record)
 
     void Visiting::visitListLocalDecl(ListLocalDecl *list_local_decl)
     {
-//        std::cout << "visitListLocalDecl: \n";
+        std::cout << "visitListLocalDecl: \n";
         for (ListLocalDecl::iterator i = list_local_decl->begin(); i != list_local_decl->end(); ++i)
         {
             (*i)->accept(this);
@@ -1080,7 +1222,7 @@ void Visiting::visitTypeRecord(TypeRecord *type_record)
 
     void Visiting::visitListAnnotation(ListAnnotation *list_annotation)
     {
-//        std::cout << "visitListAnnotation: \n";
+        std::cout << "visitListAnnotation: \n";
         for (ListAnnotation::iterator i = list_annotation->begin(); i != list_annotation->end(); ++i)
         {
             (*i)->accept(this);
@@ -1089,7 +1231,7 @@ void Visiting::visitTypeRecord(TypeRecord *type_record)
 
     void Visiting::visitListParamDecl(ListParamDecl *list_param_decl)
     {
-//        std::cout << "visitListParamDecl: \n";
+        std::cout << "visitListParamDecl: \n";
         for (ListParamDecl::iterator i = list_param_decl->begin(); i != list_param_decl->end(); ++i)
         {
             (*i)->accept(this);
@@ -1098,9 +1240,10 @@ void Visiting::visitTypeRecord(TypeRecord *type_record)
 
     void Visiting::visitListExpr(ListExpr *list_expr)
     {
-//        std::cout << "visitListExpr: \n";
+        std::cout << "visitListExpr: \n";
         for (ListExpr::iterator i = list_expr->begin(); i != list_expr->end(); ++i)
         {
+            std::cout << "----Before : \n" ;
             (*i)->accept(this);
             if(contexts.top().typeTag == MyTypeTag::UndefinedTag){
                 std::cout << "ERROR: The variable undefined, on line: " << (*i)->line_number << " at position: " << (*i)->char_number << "\n";
@@ -1111,7 +1254,7 @@ void Visiting::visitTypeRecord(TypeRecord *type_record)
 
     void Visiting::visitListMatchCase(ListMatchCase *list_match_case)
     {
-//        std::cout << "visitListMatchCase: \n";
+        std::cout << "visitListMatchCase: \n";
         for (ListMatchCase::iterator i = list_match_case->begin(); i != list_match_case->end(); ++i)
         {
             (*i)->accept(this);
@@ -1120,7 +1263,7 @@ void Visiting::visitTypeRecord(TypeRecord *type_record)
 
     void Visiting::visitListPattern(ListPattern *list_pattern)
     {
-//        std::cout << "visitListPattern: \n";
+        std::cout << "visitListPattern: \n";
         for (ListPattern::iterator i = list_pattern->begin(); i != list_pattern->end(); ++i)
         {
             (*i)->accept(this);
@@ -1129,7 +1272,7 @@ void Visiting::visitTypeRecord(TypeRecord *type_record)
 
     void Visiting::visitListLabelledPattern(ListLabelledPattern *list_labelled_pattern)
     {
-//        std::cout << "visitListLabelledPattern: \n";
+        std::cout << "visitListLabelledPattern: \n";
         for (ListLabelledPattern::iterator i = list_labelled_pattern->begin(); i != list_labelled_pattern->end(); ++i)
         {
             (*i)->accept(this);
@@ -1138,7 +1281,7 @@ void Visiting::visitTypeRecord(TypeRecord *type_record)
 
     void Visiting::visitListBinding(ListBinding *list_binding)
     {
-//        std::cout << "visitListBinding: \n";
+        std::cout << "visitListBinding: \n";
         for (ListBinding::iterator i = list_binding->begin(); i != list_binding->end(); ++i)
         {
             (*i)->accept(this);
@@ -1147,8 +1290,17 @@ void Visiting::visitTypeRecord(TypeRecord *type_record)
 
     void Visiting::visitListType(ListType *list_type)
     {
-//        std::cout << "visitListType: \n";
+        std::cout << "visitListType: \n";
         for (ListType::iterator i = list_type->begin(); i != list_type->end(); ++i)
+        {
+            (*i)->accept(this);
+        }
+    }
+
+    void Visiting::visitListPatternBinding(ListPatternBinding *list_pattern_binding)
+    {
+        std::cout << "visitListPatternBinding\n" ;
+        for (ListPatternBinding::iterator i = list_pattern_binding->begin(); i != list_pattern_binding->end(); ++i)
         {
             (*i)->accept(this);
         }
@@ -1156,7 +1308,7 @@ void Visiting::visitTypeRecord(TypeRecord *type_record)
 
     void Visiting::visitListVariantFieldType(ListVariantFieldType *list_variant_field_type)
     {
-//        std::cout << "visitListVariantFieldType: \n";
+        std::cout << "visitListVariantFieldType: \n";
         for (ListVariantFieldType::iterator i = list_variant_field_type->begin(); i != list_variant_field_type->end(); ++i)
         {
             (*i)->accept(this);
@@ -1165,7 +1317,7 @@ void Visiting::visitTypeRecord(TypeRecord *type_record)
 
     void Visiting::visitListRecordFieldType(ListRecordFieldType *list_record_field_type)
     {
-//        std::cout << "visitListRecordFieldType: \n";
+        std::cout << "visitListRecordFieldType: \n";
         for (ListRecordFieldType::iterator i = list_record_field_type->begin(); i != list_record_field_type->end(); ++i)
         {
             (*i)->accept(this);
@@ -1175,40 +1327,40 @@ void Visiting::visitTypeRecord(TypeRecord *type_record)
     void Visiting::visitInteger(Integer x)
     {
         /* Code for Integer Goes Here */
-        contexts.push(ObjectType(MyTypeTag::NatTypeTag));
-//        std::cout << "visitInt: " << x << "\n";
+        contexts.push(ObjectType(MyTypeTag::NatTypeTag, x));
+        std::cout << "visitInt: " << x << "\n";
     }
 
     void Visiting::visitChar(Char x)
     {
         /* Code for Char Goes Here */
-//        std::cout << "visitChar: " << x << "\n";
+        std::cout << "visitChar: " << x << "\n";
     }
 
     void Visiting::visitDouble(Double x)
     {
         /* Code for Double Goes Here */
 
-//        std::cout << "visitDouble: " << x << "\n";
+        std::cout << "visitDouble: " << x << "\n";
     }
 
     void Visiting::visitString(String x)
     {
         /* Code for String Goes Here */
-//        std::cout << "visitString: " << x << "\n";
+        std::cout << "visitString: " << x << "\n";
     }
 
     void Visiting::visitIdent(Ident x)
     {
         /* Code for Ident Goes Here */
 
-//        std::cout << "vistsIdent: " << x << "\n";
+        std::cout << "vistsIdent: " << x << "\n";
     }
 
     void Visiting::visitStellaIdent(StellaIdent x)
     {
         /* Code for StellaIdent Goes Here */
-//        std::cout << "Visiting StellaIdent: " << x << "\n";
+        std::cout << "Visiting StellaIdent: " << x << "\n";
         // when we come in this function I will put contextIdent[x] to context
         // By default contextIdent[x].typeTag will be Undefined, in case if we not meet this identifier it's mean get
         // default value. Other case It will work proper
