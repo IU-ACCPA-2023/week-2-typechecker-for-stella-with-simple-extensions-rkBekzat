@@ -11,5 +11,6 @@ namespace Stella {
         UnitTypeTag,
         TupleTypeTag,
         SumTypeTag,
+        ListTypeTag,
     };
 }

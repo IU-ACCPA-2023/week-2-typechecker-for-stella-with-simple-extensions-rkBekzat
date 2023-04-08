@@ -34,12 +34,14 @@ namespace Stella
     {
         /* Code For AProgram Goes Here */
         std::cout << "Start Program\n";
+        increaseScope();
         if (a_program->languagedecl_)
             a_program->languagedecl_->accept(this);
         if (a_program->listextension_)
             a_program->listextension_->accept(this);
         if (a_program->listdecl_)
             a_program->listdecl_->accept(this);
+        decreaseScope();
     }
 
     void Visiting::visitLanguageCore(LanguageCore *language_core)
@@ -61,6 +63,7 @@ namespace Stella
     {
         /* Code For DeclFun Goes Here */
         std::cout << "Visiting function declaration for " << decl_fun->stellaident_ << "\n";
+        increaseScope();
         ObjectType objFunc(MyTypeTag::FunctionTypeTag); // first I create objectType to store all types and in the end add to context
         if (decl_fun->listannotation_)
             decl_fun->listannotation_->accept(this);
@@ -95,7 +98,9 @@ namespace Stella
             exit(1);
         }
         // map the type for identifier
-        contextIdent[decl_fun->stellaident_] = objFunc;
+        decreaseScope();
+        contextIdent[decl_fun->stellaident_].push(objFunc);
+        scopedContext.top().push_back(decl_fun->stellaident_);
         visitStellaIdent(decl_fun->stellaident_);
 
     }
@@ -136,7 +141,8 @@ namespace Stella
             a_param_decl->type_->accept(this);
 
         std::cout <<"SET the stellIDENT: "<< a_param_decl->stellaident_ << " " << contexts.top().typeTag << "\n\n";
-        contextIdent[a_param_decl->stellaident_] = contexts.top();
+        contextIdent[a_param_decl->stellaident_].push(contexts.top());
+        scopedContext.top().push_back(a_param_decl->stellaident_); // add the list which store stellaidents
         visitStellaIdent(a_param_decl->stellaident_);
         contexts.pop();
     }
@@ -173,7 +179,6 @@ namespace Stella
     {
         /* Code For If Goes Here */
         std::cout << "VisitIf\n";
-
         if (if_->expr_1)
             if_->expr_1->accept(this);
         // here in contexts.top() will store type of expr1
@@ -190,6 +195,7 @@ namespace Stella
         // delete this type, no need to store somewhere
         contexts.pop();
 
+        increaseScope();
         if (if_->expr_2)
             if_->expr_2->accept(this);
         // here in contexts.top() will store type of expr2
@@ -200,7 +206,8 @@ namespace Stella
             std::cout << "ERROR: Undefined type on line: " << if_->expr_2->line_number << " at position: " << if_->expr_2->char_number << "\n";
             exit(1);
         }
-
+        decreaseScope();
+        increaseScope();
         if (if_->expr_3)
             if_->expr_3->accept(this);
         // here in context.top() will store type of expr3
@@ -216,7 +223,7 @@ namespace Stella
             std::cout<< " and on line:" << if_->expr_3->line_number << " postion" << if_->expr_3->char_number  << "\n";
             exit(1);
         }
-
+        decreaseScope();
         // I not remove element from stack cause I need result
     }
 
@@ -314,6 +321,7 @@ namespace Stella
     {
         /* Code For Abstraction Goes Here */
         std::cout << "visitAbstraction\n";
+
         int sizeBefore = contexts.size(); // this variable need to recognize how many params declared
         ObjectType obj(MyTypeTag::FunctionTypeTag);
         if (abstraction->listparamdecl_)
@@ -519,8 +527,19 @@ namespace Stella
     {
         /* Code For IsEmpty Goes Here */
         std::cout << "visitIsEmpty\n";
+        int sizeBefore = contexts.size();
         if (is_empty->expr_)
             is_empty->expr_->accept(this);
+        if(contexts.size() - sizeBefore != 1){
+            std::cout << "ERROR: IsEmpty not work proper: function should take only one expr, but take: " << contexts.size() - sizeBefore << "\n";
+            exit(1);
+        }
+        if(contexts.top().typeTag != MyTypeTag::ListTypeTag){
+            std::cout << "ERROR: IsEmpty function accept list." << contexts.top().typeTag << "\n";
+            exit(1);
+        }
+        contexts.pop(); // deleting list
+        contexts.push(ObjectType(MyTypeTag::BoolTypeTag)); // This function return bool
     }
 
     void Visiting::visitTail(Tail *tail)
@@ -622,7 +641,7 @@ namespace Stella
         // add to obj and remove from context
         objRec.params.push_back(contexts.top());
         contexts.pop();
-
+        increaseScope();
         sizedBefore = contexts.size();
         if (nat_rec->expr_2)
             nat_rec->expr_2->accept(this);
@@ -635,8 +654,10 @@ namespace Stella
         objRec.params.push_back(contexts.top());
         objRec.returns.push_back(contexts.top());
         contexts.pop();
-
+        decreaseScope();
+        increaseScope();
         sizedBefore = contexts.size();
+
         if (nat_rec->expr_3)
             nat_rec->expr_3->accept(this);
         // context.top() is type of 3rd expr
@@ -679,7 +700,7 @@ namespace Stella
         objRec.params.push_back(contexts.top());
         contexts.pop();
         contexts.push(objRec); // add obj to contexts
-
+        decreaseScope();
     }
 
     void Visiting::visitFold(Fold *fold)
@@ -763,6 +784,7 @@ namespace Stella
     void Visiting::visitConstUnit(ConstUnit *const_unit)
     {
         /* Code For ConstUnit Goes Here */
+        contexts.push(MyTypeTag::UnitTypeTag);
     }
 
     void Visiting::visitConstInt(ConstInt *const_int)
@@ -971,7 +993,8 @@ namespace Stella
         /* Code For PatternVar Goes Here */
         std::cout << "visitPatternVar\n";
         std::cout << "ASSIGN: " << pattern_var->stellaident_ << " " << contexts.top().typeTag  << "\n";
-        contextIdent[pattern_var->stellaident_] = contexts.top();
+        contextIdent[pattern_var->stellaident_].push(contexts.top());
+        scopedContext.top().push_back(pattern_var->stellaident_);
         contexts.pop();
         std::cout << "NEXT: "  << contexts.top().typeTag << "\n\n";
         visitStellaIdent(pattern_var->stellaident_);
@@ -1051,6 +1074,10 @@ namespace Stella
     {
         /* Code For TypeSum Goes Here */
         std::cout << "visitTypeSum\n";
+        Type *tmp = type_sum->clone();
+        std::cout << printer.print(tmp) << " \n\n";
+        std::cout << printer.print(type_sum) << "\n";
+        std::cout << printer.print(type_sum->type_1) << "    " << printer.print(type_sum->type_2) << "\n\n";
         ObjectType objSum(MyTypeTag::SumTypeTag);
         if (type_sum->type_1)
             type_sum->type_1->accept(this);
@@ -1101,9 +1128,12 @@ void Visiting::visitTypeRecord(TypeRecord *type_record)
     {
         /* Code For TypeList Goes Here */
         std::cout << "visitTypeList\n";
-
+        ObjectType objList(MyTypeTag::ListTypeTag);
         if (type_list->type_)
             type_list->type_->accept(this);
+        objList.params.push_back(contexts.top());
+        contexts.pop(); // delete type which contain list
+        contexts.push(objList); // add list
     }
 
     void Visiting::visitTypeBool(TypeBool *type_bool)
@@ -1364,8 +1394,12 @@ void Visiting::visitTypeRecord(TypeRecord *type_record)
         // when we come in this function I will put contextIdent[x] to context
         // By default contextIdent[x].typeTag will be Undefined, in case if we not meet this identifier it's mean get
         // default value. Other case It will work proper
-        contexts.push(contextIdent[x]);
 
+        if(contextIdent[x].size() == 0){ // if size of stack is empty it's mean this ident not declared
+            contexts.push(ObjectType(MyTypeTag::UndefinedTag));
+        } else {
+            contexts.push(contextIdent[x].top()); // add latest value which mean local value
+        }
     }
 
     void Visiting::visitExtensionName(ExtensionName x)

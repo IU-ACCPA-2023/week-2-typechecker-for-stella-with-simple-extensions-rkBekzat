@@ -5,6 +5,7 @@
 #include <map>
 #include <queue>
 #include <vector>
+#include <iostream>
 #include "Enum.h"
 #include <unordered_map>
 #include "Stella/Absyn.H"
@@ -20,19 +21,31 @@ class Visiting : public Visitor
     {
     private:
         Stella::PrintAbsyn printer = Stella::PrintAbsyn();
-        std::unordered_map<StellaIdent, ObjectType> contextIdent = {};
+        std::unordered_map<StellaIdent, std::stack<ObjectType>> contextIdent = {}; // contextIdent[ident].top() - is the value of ident, it's local value. if stack is empty it's mean this ident not declared
 
         ObjectType expected_type ;
-
+        std::stack<std::vector<StellaIdent>> scopedContext; // when entering to new scope I add the idents to vector, and when I go out I delete last element from stack
         std::stack<ObjectType> contexts;
+
+
+        void increaseScope(){
+            scopedContext.push(std::vector<StellaIdent>());
+        }
+        void decreaseScope(){
+            std::vector<StellaIdent> removeIdent = scopedContext.top();
+            for(int i = 0; i < removeIdent.size(); i++){
+                StellaIdent name = removeIdent[i];
+                std::cout << "FIRST: " << name << "\n";
+                contextIdent[name].pop();
+            }
+            scopedContext.pop();
+        }
+
     public:
 
     bool checkReturn(ObjectType actual, ObjectType expected){
         if(actual == expected){
             return true;
-        }
-        if(actual.typeTag == MyTypeTag::FunctionTypeTag){
-            return checkReturn(actual.returns[0], expected);
         }
         if(actual.typeTag == MyTypeTag::SumTypeTag){
             return checkReturn(actual.returns[0], expected) && checkReturn(actual.returns[1], expected);

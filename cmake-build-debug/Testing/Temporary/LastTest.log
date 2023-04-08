@@ -1,3 +1,3522 @@
-Start testing: Apr 08 00:00 MSK
+Start testing: Apr 08 04:18 MSK
 ----------------------------------------------------------
-End testing: Apr 08 00:00 MSK
+1/37 Testing: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-1.stella
+1/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-1.stella
+Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-1.stella"
+Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-1.stella" start time: Apr 08 04:18 MSK
+Output:
+----------------------------------------------------------
+parsing succeeded!
+prog is not null
+Start Program
+visitLanguageCore
+visitListExtension: 
+visitListDecl: 
+Visiting function declaration for main
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 3  12
+SET the stellIDENT: f 2
+
+Visiting StellaIdent: f
+SomereturnType
+Visiting NAT: 3  20
+visitNoThrowType
+visitListDecl: 
+visitApplication
+visitVar
+Visiting StellaIdent: f
+ERROR: This is not function. On line: 4 at position: 9
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-1.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-1.stella" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/37 Testing: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-2.stella
+2/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-2.stella
+Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-2.stella"
+Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-2.stella" start time: Apr 08 04:18 MSK
+Output:
+----------------------------------------------------------
+parsing succeeded!
+prog is not null
+Start Program
+visitLanguageCore
+visitListExtension: 
+visitListDecl: 
+Visiting function declaration for main
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 3  12
+SET the stellIDENT: n 2
+
+Visiting StellaIdent: n
+SomereturnType
+Visiting NAT: 3  20
+visitNoThrowType
+visitListDecl: 
+visitApplication
+visitSucc
+visitVar
+Visiting StellaIdent: n
+ERROR: This is not function. On line: 4 at position: 9
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-2.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-2.stella" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/37 Testing: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-3.stella
+3/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-3.stella
+Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-3.stella"
+Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-3.stella" start time: Apr 08 04:18 MSK
+Output:
+----------------------------------------------------------
+parsing succeeded!
+prog is not null
+Start Program
+visitLanguageCore
+visitListExtension: 
+visitListDecl: 
+Visiting function declaration for main
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 3  12
+SET the stellIDENT: n 2
+
+Visiting StellaIdent: n
+SomereturnType
+Visiting NAT: 3  20
+visitNoThrowType
+visitListDecl: 
+visitApplication
+visitApplication
+visitApplication
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+visitBool
+AMAZING WOKR: Bool 
+
+SET the stellIDENT: x 1
+
+Visiting StellaIdent: x
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 4  39
+SET the stellIDENT: y 2
+
+Visiting StellaIdent: y
+visitSucc
+visitVar
+Visiting StellaIdent: y
+visitListExpr: 
+----Before : 
+ConstFalse
+visitListExpr: 
+----Before : 
+ConstInt
+visitInt: 0
+ERROR: This is not function. On line: 4 at position: 9
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-3.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-3.stella" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/37 Testing: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/argument-type-mismatch-1.stella
+4/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/argument-type-mismatch-1.stella
+Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/argument-type-mismatch-1.stella"
+Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/argument-type-mismatch-1.stella" start time: Apr 08 04:18 MSK
+Output:
+----------------------------------------------------------
+parsing succeeded!
+prog is not null
+Start Program
+visitLanguageCore
+visitListExtension: 
+visitListDecl: 
+Visiting function declaration for main
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 3  12
+SET the stellIDENT: n 2
+
+Visiting StellaIdent: n
+SomereturnType
+Visiting NAT: 3  20
+visitNoThrowType
+visitListDecl: 
+visitApplication
+visitApplication
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+visitBool
+AMAZING WOKR: Bool 
+
+SET the stellIDENT: x 1
+
+Visiting StellaIdent: x
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 4  39
+SET the stellIDENT: y 2
+
+Visiting StellaIdent: y
+visitSucc
+visitVar
+Visiting StellaIdent: y
+visitListExpr: 
+----Before : 
+ConstInt
+visitInt: 0
+ERROR: mismatch this params on line: 4
+2 1
+0 0
+0 0
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/argument-type-mismatch-1.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/argument-type-mismatch-1.stella" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/37 Testing: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/argument-type-mismatch-2.stella
+5/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/argument-type-mismatch-2.stella
+Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/argument-type-mismatch-2.stella"
+Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/argument-type-mismatch-2.stella" start time: Apr 08 04:18 MSK
+Output:
+----------------------------------------------------------
+parsing succeeded!
+prog is not null
+Start Program
+visitLanguageCore
+visitListExtension: 
+visitListDecl: 
+Visiting function declaration for iszero
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 3  14
+SET the stellIDENT: n 2
+
+Visiting StellaIdent: n
+SomereturnType
+visitBool
+AMAZING WOKR: Bool 
+
+visitNoThrowType
+visitListDecl: 
+visitNatRec
+visitVar
+Visiting StellaIdent: n
+ConstTrue 
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 4  36
+SET the stellIDENT: i 2
+
+Visiting StellaIdent: i
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+visitBool
+AMAZING WOKR: Bool 
+
+SET the stellIDENT: r 1
+
+Visiting StellaIdent: r
+ConstTrue 
+FIRST: i
+FIRST: r
+Fucntion go out: 1 1
+FIRST: n
+Visiting StellaIdent: iszero
+Visiting function declaration for f
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+visitTypeFun
+visitListType: 
+visitBool
+AMAZING WOKR: Bool 
+
+Visiting NAT: 11  21
+SET the stellIDENT: g 3
+
+Visiting StellaIdent: g
+SomereturnType
+visitTypeFun
+visitListType: 
+Visiting NAT: 11  32
+Visiting NAT: 11  40
+visitNoThrowType
+visitListDecl: 
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 12  18
+SET the stellIDENT: n 2
+
+Visiting StellaIdent: n
+visitApplication
+visitVar
+Visiting StellaIdent: g
+visitListExpr: 
+----Before : 
+VisitIf
+visitApplication
+visitVar
+Visiting StellaIdent: iszero
+visitListExpr: 
+----Before : 
+visitVar
+Visiting StellaIdent: n
+ConstFalse
+ConstTrue 
+Fucntion go out: 3 3
+FIRST: g
+FIRST: n
+Visiting StellaIdent: f
+Visiting function declaration for main
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 17  12
+SET the stellIDENT: n 2
+
+Visiting StellaIdent: n
+SomereturnType
+Visiting NAT: 17  20
+visitNoThrowType
+visitListDecl: 
+visitApplication
+visitApplication
+visitVar
+Visiting StellaIdent: f
+visitListExpr: 
+----Before : 
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 18  19
+SET the stellIDENT: x 2
+
+Visiting StellaIdent: x
+visitVar
+Visiting StellaIdent: n
+ERROR: mismatch this params on line: 18
+3 3
+1 1
+1 1
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/argument-type-mismatch-2.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/argument-type-mismatch-2.stella" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/37 Testing: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/argument-type-mismatch-3.stella
+6/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/argument-type-mismatch-3.stella
+Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/argument-type-mismatch-3.stella"
+Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/argument-type-mismatch-3.stella" start time: Apr 08 04:18 MSK
+Output:
+----------------------------------------------------------
+parsing succeeded!
+prog is not null
+Start Program
+visitLanguageCore
+visitListExtension: 
+visitListDecl: 
+Visiting function declaration for iszero
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 3  14
+SET the stellIDENT: n 2
+
+Visiting StellaIdent: n
+SomereturnType
+visitBool
+AMAZING WOKR: Bool 
+
+visitNoThrowType
+visitListDecl: 
+visitNatRec
+visitVar
+Visiting StellaIdent: n
+ConstTrue 
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 4  36
+SET the stellIDENT: i 2
+
+Visiting StellaIdent: i
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+visitBool
+AMAZING WOKR: Bool 
+
+SET the stellIDENT: r 1
+
+Visiting StellaIdent: r
+ConstTrue 
+FIRST: i
+FIRST: r
+Fucntion go out: 1 1
+FIRST: n
+Visiting StellaIdent: iszero
+Visiting function declaration for k
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+visitTypeFun
+visitListType: 
+Visiting NAT: 11  12
+visitTypeFun
+visitListType: 
+visitTypeFun
+visitListType: 
+Visiting NAT: 11  27
+visitBool
+AMAZING WOKR: Bool 
+
+Visiting NAT: 11  44
+SET the stellIDENT: g 3
+
+Visiting StellaIdent: g
+SomereturnType
+Visiting NAT: 11  53
+visitNoThrowType
+visitListDecl: 
+visitApplication
+visitApplication
+visitVar
+Visiting StellaIdent: g
+visitListExpr: 
+----Before : 
+visitSucc
+visitSucc
+ConstInt
+visitInt: 0
+visitListExpr: 
+----Before : 
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 12  35
+SET the stellIDENT: k 2
+
+Visiting StellaIdent: k
+VisitIf
+visitApplication
+visitVar
+Visiting StellaIdent: iszero
+visitListExpr: 
+----Before : 
+visitVar
+Visiting StellaIdent: k
+ConstFalse
+ConstTrue 
+Fucntion go out: 2 2
+FIRST: g
+FIRST: k
+Visiting StellaIdent: k
+Visiting function declaration for main
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 17  12
+SET the stellIDENT: n 2
+
+Visiting StellaIdent: n
+SomereturnType
+Visiting NAT: 17  20
+visitNoThrowType
+visitListDecl: 
+visitApplication
+visitVar
+Visiting StellaIdent: k
+visitListExpr: 
+----Before : 
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 18  19
+SET the stellIDENT: n 2
+
+Visiting StellaIdent: n
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+visitTypeFun
+visitListType: 
+Visiting NAT: 19  23
+Visiting NAT: 19  31
+SET the stellIDENT: h 3
+
+Visiting StellaIdent: h
+visitApplication
+visitVar
+Visiting StellaIdent: h
+visitListExpr: 
+----Before : 
+visitSucc
+visitVar
+Visiting StellaIdent: n
+ERROR: mismatch this params on line: 18
+3 3
+1 1
+1 1
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/argument-type-mismatch-3.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/argument-type-mismatch-3.stella" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/37 Testing: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-1.stella
+7/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-1.stella
+Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-1.stella"
+Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-1.stella" start time: Apr 08 04:18 MSK
+Output:
+----------------------------------------------------------
+parsing succeeded!
+prog is not null
+Start Program
+visitLanguageCore
+visitListExtension: 
+visitListDecl: 
+Visiting function declaration for main
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 3  12
+SET the stellIDENT: x 2
+
+Visiting StellaIdent: x
+SomereturnType
+Visiting NAT: 3  20
+visitNoThrowType
+visitListDecl: 
+VisitIf
+visitVar
+Visiting StellaIdent: x
+ERROR: if condition type should be bool. On line:4 char:14
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-1.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-1.stella" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/37 Testing: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-2.stella
+8/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-2.stella
+Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-2.stella"
+Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-2.stella" start time: Apr 08 04:18 MSK
+Output:
+----------------------------------------------------------
+parsing succeeded!
+prog is not null
+Start Program
+visitLanguageCore
+visitListExtension: 
+visitListDecl: 
+Visiting function declaration for main
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 3  12
+SET the stellIDENT: x 2
+
+Visiting StellaIdent: x
+SomereturnType
+Visiting NAT: 3  20
+visitNoThrowType
+visitListDecl: 
+VisitIf
+ConstFalse
+ConstTrue 
+ConstInt
+visitInt: 0
+1 2
+ERROR: if return different types on line: 4 position 25 and on line:4 postion35
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-2.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-2.stella" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/37 Testing: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-3.stella
+9/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-3.stella
+Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-3.stella"
+Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-3.stella" start time: Apr 08 04:18 MSK
+Output:
+----------------------------------------------------------
+parsing succeeded!
+prog is not null
+Start Program
+visitLanguageCore
+visitListExtension: 
+visitListDecl: 
+Visiting function declaration for main
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 3  12
+SET the stellIDENT: x 2
+
+Visiting StellaIdent: x
+SomereturnType
+Visiting NAT: 3  20
+visitNoThrowType
+visitListDecl: 
+visitApplication
+VisitIf
+ConstFalse
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 4  33
+SET the stellIDENT: x 2
+
+Visiting StellaIdent: x
+visitVar
+Visiting StellaIdent: x
+FIRST: x
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 4  64
+SET the stellIDENT: x 2
+
+Visiting StellaIdent: x
+visitVar
+Visiting StellaIdent: x
+FIRST: x
+visitListExpr: 
+----Before : 
+ConstFalse
+ERROR: mismatch this params on line: 4
+1 2
+0 0
+0 0
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-3.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-3.stella" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/37 Testing: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-4.stella
+10/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-4.stella
+Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-4.stella"
+Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-4.stella" start time: Apr 08 04:18 MSK
+Output:
+----------------------------------------------------------
+parsing succeeded!
+prog is not null
+Start Program
+visitLanguageCore
+visitListExtension: 
+visitListDecl: 
+Visiting function declaration for main
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 3  12
+SET the stellIDENT: x 2
+
+Visiting StellaIdent: x
+SomereturnType
+Visiting NAT: 3  20
+visitNoThrowType
+visitListDecl: 
+visitApplication
+VisitIf
+ConstFalse
+ConstTrue 
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 4  43
+SET the stellIDENT: x 2
+
+Visiting StellaIdent: x
+visitVar
+Visiting StellaIdent: x
+1 3
+ERROR: if return different types on line: 4 position 26 and on line:4 postion36
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-4.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-4.stella" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/37 Testing: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-squares-1.stella
+11/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-squares-1.stella
+Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-squares-1.stella"
+Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-squares-1.stella" start time: Apr 08 04:18 MSK
+Output:
+----------------------------------------------------------
+parsing succeeded!
+prog is not null
+Start Program
+visitLanguageCore
+visitListExtension: 
+visitListDecl: 
+Visiting function declaration for Nat::add
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 4  16
+SET the stellIDENT: n 2
+
+Visiting StellaIdent: n
+SomereturnType
+Visiting NAT: 4  24
+visitNoThrowType
+visitListDecl: 
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 5  16
+SET the stellIDENT: m 2
+
+Visiting StellaIdent: m
+visitNatRec
+visitVar
+Visiting StellaIdent: n
+visitVar
+Visiting StellaIdent: m
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 6  33
+SET the stellIDENT: i 2
+
+Visiting StellaIdent: i
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 7  20
+SET the stellIDENT: r 2
+
+Visiting StellaIdent: r
+visitSucc
+visitVar
+Visiting StellaIdent: r
+FIRST: i
+FIRST: r
+Fucntion go out: 2 3
+FIRST: n
+FIRST: m
+Visiting StellaIdent: Nat::add
+Visiting function declaration for square
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 15  14
+SET the stellIDENT: n 2
+
+Visiting StellaIdent: n
+SomereturnType
+Visiting NAT: 15  22
+visitNoThrowType
+visitListDecl: 
+visitNatRec
+visitVar
+Visiting StellaIdent: n
+ConstInt
+visitInt: 0
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 16  31
+SET the stellIDENT: i 2
+
+Visiting StellaIdent: i
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 17  20
+SET the stellIDENT: r 2
+
+Visiting StellaIdent: r
+visitApplication
+visitApplication
+visitVar
+Visiting StellaIdent: Nat::add
+visitListExpr: 
+----Before : 
+visitVar
+Visiting StellaIdent: i
+ERROR: This is not function. On line: 19 at position: 15
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-squares-1.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-squares-1.stella" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/37 Testing: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-squares-2.stella
+12/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-squares-2.stella
+Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-squares-2.stella"
+Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-squares-2.stella" start time: Apr 08 04:18 MSK
+Output:
+----------------------------------------------------------
+parsing succeeded!
+prog is not null
+Start Program
+visitLanguageCore
+visitListExtension: 
+visitListDecl: 
+Visiting function declaration for Nat::add
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 4  16
+SET the stellIDENT: n 2
+
+Visiting StellaIdent: n
+SomereturnType
+visitTypeFun
+visitListType: 
+Visiting NAT: 4  27
+Visiting NAT: 4  35
+visitNoThrowType
+visitListDecl: 
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 5  16
+SET the stellIDENT: m 2
+
+Visiting StellaIdent: m
+visitNatRec
+visitVar
+Visiting StellaIdent: n
+visitVar
+Visiting StellaIdent: m
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 6  33
+SET the stellIDENT: i 2
+
+Visiting StellaIdent: i
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 7  20
+SET the stellIDENT: r 2
+
+Visiting StellaIdent: r
+visitSucc
+visitVar
+Visiting StellaIdent: r
+FIRST: i
+FIRST: r
+Fucntion go out: 3 3
+FIRST: n
+FIRST: m
+Visiting StellaIdent: Nat::add
+Visiting function declaration for square
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 15  14
+SET the stellIDENT: n 2
+
+Visiting StellaIdent: n
+SomereturnType
+Visiting NAT: 15  22
+visitNoThrowType
+visitListDecl: 
+visitNatRec
+visitVar
+Visiting StellaIdent: n
+ConstInt
+visitInt: 0
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 16  31
+SET the stellIDENT: i 2
+
+Visiting StellaIdent: i
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 17  20
+SET the stellIDENT: r 2
+
+Visiting StellaIdent: r
+visitApplication
+visitVar
+Visiting StellaIdent: Nat::add
+visitListExpr: 
+----Before : 
+visitApplication
+visitApplication
+visitVar
+Visiting StellaIdent: Nat::add
+visitListExpr: 
+----Before : 
+visitVar
+Visiting StellaIdent: i
+visitListExpr: 
+----Before : 
+visitSucc
+visitVar
+Visiting StellaIdent: r
+ERROR: NatRec 3rd argument functions: Should be same type of params type and return typeLine: 16 position:24
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-squares-2.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-squares-2.stella" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/37 Testing: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-succ-1.stella
+13/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-succ-1.stella
+Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-succ-1.stella"
+Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-succ-1.stella" start time: Apr 08 04:18 MSK
+Output:
+----------------------------------------------------------
+parsing succeeded!
+prog is not null
+Start Program
+visitLanguageCore
+visitListExtension: 
+visitListDecl: 
+Visiting function declaration for main
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 3  12
+SET the stellIDENT: x 2
+
+Visiting StellaIdent: x
+SomereturnType
+Visiting NAT: 3  20
+visitNoThrowType
+visitListDecl: 
+visitSucc
+visitSucc
+visitSucc
+VisitIf
+ConstTrue 
+visitSucc
+ConstFalse
+ERROR: Succ should accept only Nat. Here different type!
+On line 4 at position: 44
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-succ-1.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-succ-1.stella" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/37 Testing: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-succ-2.stella
+14/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-succ-2.stella
+Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-succ-2.stella"
+Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-succ-2.stella" start time: Apr 08 04:18 MSK
+Output:
+----------------------------------------------------------
+parsing succeeded!
+prog is not null
+Start Program
+visitLanguageCore
+visitListExtension: 
+visitListDecl: 
+Visiting function declaration for main
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 3  12
+SET the stellIDENT: x 2
+
+Visiting StellaIdent: x
+SomereturnType
+Visiting NAT: 3  20
+visitNoThrowType
+visitListDecl: 
+visitSucc
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 4  23
+SET the stellIDENT: x 2
+
+Visiting StellaIdent: x
+ConstInt
+visitInt: 0
+ERROR: Succ should accept only Nat. Here different type!
+On line 4 at position: 16
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-succ-2.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-succ-2.stella" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/37 Testing: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-succ-3.stella
+15/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-succ-3.stella
+Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-succ-3.stella"
+Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-succ-3.stella" start time: Apr 08 04:18 MSK
+Output:
+----------------------------------------------------------
+parsing succeeded!
+prog is not null
+Start Program
+visitLanguageCore
+visitListExtension: 
+visitListDecl: 
+Visiting function declaration for main
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 3  12
+SET the stellIDENT: x 2
+
+Visiting StellaIdent: x
+SomereturnType
+Visiting NAT: 3  20
+visitNoThrowType
+visitListDecl: 
+visitSucc
+ConstFalse
+ERROR: Succ should accept only Nat. Here different type!
+On line 4 at position: 16
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-succ-3.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-succ-3.stella" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/37 Testing: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/shadowed-variable-1.stella
+16/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/shadowed-variable-1.stella
+Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/shadowed-variable-1.stella"
+Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/shadowed-variable-1.stella" start time: Apr 08 04:18 MSK
+Output:
+----------------------------------------------------------
+parsing succeeded!
+prog is not null
+Start Program
+visitLanguageCore
+visitListExtension: 
+visitListDecl: 
+Visiting function declaration for iszero
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 3  14
+SET the stellIDENT: n 2
+
+Visiting StellaIdent: n
+SomereturnType
+visitBool
+AMAZING WOKR: Bool 
+
+visitNoThrowType
+visitListDecl: 
+visitNatRec
+visitVar
+Visiting StellaIdent: n
+ConstTrue 
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 4  36
+SET the stellIDENT: i 2
+
+Visiting StellaIdent: i
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+visitBool
+AMAZING WOKR: Bool 
+
+SET the stellIDENT: r 1
+
+Visiting StellaIdent: r
+ConstTrue 
+FIRST: i
+FIRST: r
+Fucntion go out: 1 1
+FIRST: n
+Visiting StellaIdent: iszero
+Visiting function declaration for f
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+visitTypeFun
+visitListType: 
+visitBool
+AMAZING WOKR: Bool 
+
+Visiting NAT: 11  21
+SET the stellIDENT: g 3
+
+Visiting StellaIdent: g
+SomereturnType
+visitTypeFun
+visitListType: 
+Visiting NAT: 11  32
+Visiting NAT: 11  40
+visitNoThrowType
+visitListDecl: 
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 12  18
+SET the stellIDENT: g 2
+
+Visiting StellaIdent: g
+visitApplication
+visitVar
+Visiting StellaIdent: g
+ERROR: This is not function. On line: 13 at position: 15
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/shadowed-variable-1.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/shadowed-variable-1.stella" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/37 Testing: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/undefined-variable-1.stella
+17/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/undefined-variable-1.stella
+Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/undefined-variable-1.stella"
+Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/undefined-variable-1.stella" start time: Apr 08 04:18 MSK
+Output:
+----------------------------------------------------------
+parsing succeeded!
+prog is not null
+Start Program
+visitLanguageCore
+visitListExtension: 
+visitListDecl: 
+Visiting function declaration for main
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 3  12
+SET the stellIDENT: x 2
+
+Visiting StellaIdent: x
+SomereturnType
+Visiting NAT: 3  20
+visitNoThrowType
+visitListDecl: 
+VisitIf
+visitVar
+Visiting StellaIdent: y
+ERROR: The variable undefined, on line: 4 at position: 14
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/undefined-variable-1.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/undefined-variable-1.stella" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/37 Testing: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/undefined-variable-2.stella
+18/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/undefined-variable-2.stella
+Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/undefined-variable-2.stella"
+Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/undefined-variable-2.stella" start time: Apr 08 04:18 MSK
+Output:
+----------------------------------------------------------
+parsing succeeded!
+prog is not null
+Start Program
+visitLanguageCore
+visitListExtension: 
+visitListDecl: 
+Visiting function declaration for iszero
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 3  14
+SET the stellIDENT: n 2
+
+Visiting StellaIdent: n
+SomereturnType
+visitBool
+AMAZING WOKR: Bool 
+
+visitNoThrowType
+visitListDecl: 
+visitNatRec
+visitVar
+Visiting StellaIdent: n
+ConstTrue 
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 4  36
+SET the stellIDENT: i 2
+
+Visiting StellaIdent: i
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+visitBool
+AMAZING WOKR: Bool 
+
+SET the stellIDENT: r 1
+
+Visiting StellaIdent: r
+ConstTrue 
+FIRST: i
+FIRST: r
+Fucntion go out: 1 1
+FIRST: n
+Visiting StellaIdent: iszero
+Visiting function declaration for f
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+visitTypeFun
+visitListType: 
+visitBool
+AMAZING WOKR: Bool 
+
+Visiting NAT: 11  21
+SET the stellIDENT: g 3
+
+Visiting StellaIdent: g
+SomereturnType
+visitTypeFun
+visitListType: 
+Visiting NAT: 11  32
+Visiting NAT: 11  40
+visitNoThrowType
+visitListDecl: 
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 12  18
+SET the stellIDENT: n 2
+
+Visiting StellaIdent: n
+visitApplication
+visitVar
+Visiting StellaIdent: g
+visitListExpr: 
+----Before : 
+VisitIf
+visitApplication
+visitVar
+Visiting StellaIdent: iszero
+visitListExpr: 
+----Before : 
+visitVar
+Visiting StellaIdent: m
+ERROR: The variable undefined, on line: 13 at position: 27
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/undefined-variable-2.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/undefined-variable-2.stella" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/37 Testing: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/lists/ill-typed/bad-variants-1.stella
+19/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/lists/ill-typed/bad-variants-1.stella
+Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/lists/ill-typed/bad-variants-1.stella"
+Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/lists/ill-typed/bad-variants-1.stella" start time: Apr 08 04:18 MSK
+Output:
+----------------------------------------------------------
+parsing succeeded!
+prog is not null
+Start Program
+visitLanguageCore
+visitListExtension: 
+visitAnExtensionvisitListExtensionName: 
+visitExtensionName: #lists
+visitExtensionName: #general-recursion
+visitListDecl: 
+Visiting function declaration for length
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+visitTypeList
+Visiting NAT: 4  18
+SET the stellIDENT: list 7
+
+Visiting StellaIdent: list
+SomereturnType
+Visiting NAT: 4  27
+visitNoThrowType
+visitListDecl: 
+VisitIf
+visitIsEmpty
+visitVar
+Visiting StellaIdent: list
+ConstInt
+visitInt: 0
+visitSucc
+visitApplication
+visitVar
+Visiting StellaIdent: length
+ERROR: This is not function. On line: 7 at position: 14
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/lists/ill-typed/bad-variants-1.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/lists/ill-typed/bad-variants-1.stella" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/37 Testing: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/pairs/ill-typed/bad-pairs-1.stella
+20/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/pairs/ill-typed/bad-pairs-1.stella
+Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/pairs/ill-typed/bad-pairs-1.stella"
+Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/pairs/ill-typed/bad-pairs-1.stella" start time: Apr 08 04:18 MSK
+Output:
+----------------------------------------------------------
+parsing succeeded!
+prog is not null
+Start Program
+visitLanguageCore
+visitListExtension: 
+visitAnExtensionvisitListExtensionName: 
+visitExtensionName: #pairs
+visitListDecl: 
+Visiting function declaration for swap
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+visitTypeTuple
+visitListType: 
+Visiting NAT: 4  13
+visitBool
+AMAZING WOKR: Bool 
+
+SET the stellIDENT: p 5
+
+Visiting StellaIdent: p
+SomereturnType
+visitTypeTuple
+visitListType: 
+visitBool
+AMAZING WOKR: Bool 
+
+Visiting NAT: 4  35
+visitNoThrowType
+visitListDecl: 
+visitTuple
+visitListExpr: 
+----Before : 
+visitDotTuple
+visitVar
+Visiting StellaIdent: p
+visitInt: 2
+----Before : 
+visitDotTuple
+visitVar
+Visiting StellaIdent: p
+visitInt: 1
+Fucntion go out: 5 5
+FIRST: p
+Visiting StellaIdent: swap
+Visiting function declaration for main
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 8  12
+SET the stellIDENT: x 2
+
+Visiting StellaIdent: x
+SomereturnType
+Visiting NAT: 8  20
+visitNoThrowType
+visitListDecl: 
+visitDotTuple
+visitApplication
+visitVar
+Visiting StellaIdent: swap
+visitListExpr: 
+----Before : 
+visitApplication
+visitVar
+Visiting StellaIdent: swap
+visitListExpr: 
+----Before : 
+visitTuple
+visitListExpr: 
+----Before : 
+ConstInt
+visitInt: 0
+----Before : 
+visitVar
+Visiting StellaIdent: x
+ERROR: mismatch this params on line: 9
+5 5
+2 2
+0 0
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/pairs/ill-typed/bad-pairs-1.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/pairs/ill-typed/bad-pairs-1.stella" time elapsed: 00:00:00
+----------------------------------------------------------
+
+21/37 Testing: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/records/ill-typed/bad-records-1.stella
+21/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/records/ill-typed/bad-records-1.stella
+Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/records/ill-typed/bad-records-1.stella"
+Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/records/ill-typed/bad-records-1.stella" start time: Apr 08 04:18 MSK
+Output:
+----------------------------------------------------------
+parsing succeeded!
+prog is not null
+Start Program
+visitLanguageCore
+visitListExtension: 
+visitAnExtensionvisitListExtensionName: 
+visitExtensionName: #records
+visitListDecl: 
+Visiting function declaration for rotate3
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+visitTypeRecord
+visitListRecordFieldType: 
+visitARecordFieldType
+Visiting StellaIdent: x
+Visiting NAT: 4  20
+visitARecordFieldType
+Visiting StellaIdent: y
+visitBool
+AMAZING WOKR: Bool 
+
+visitARecordFieldType
+Visiting StellaIdent: z
+Visiting NAT: 4  39
+SET the stellIDENT: p 2
+
+Visiting StellaIdent: p
+SomereturnType
+visitTypeRecord
+visitListRecordFieldType: 
+visitARecordFieldType
+Visiting StellaIdent: a
+Visiting NAT: 4  53
+visitARecordFieldType
+Visiting StellaIdent: b
+Visiting NAT: 4  62
+visitARecordFieldType
+Visiting StellaIdent: c
+Visiting NAT: 4  71
+visitNoThrowType
+visitListDecl: 
+visitRecord
+visitListBinding: 
+visitABinding
+Visiting StellaIdent: a
+visitDotRecord
+visitVar
+Visiting StellaIdent: p
+Visiting StellaIdent: z
+visitABinding
+Visiting StellaIdent: b
+visitDotRecord
+visitVar
+Visiting StellaIdent: p
+Visiting StellaIdent: y
+visitABinding
+Visiting StellaIdent: c
+visitDotRecord
+visitVar
+Visiting StellaIdent: p
+Visiting StellaIdent: x
+Fucntion go out: 2 0
+FIRST: p
+Visiting StellaIdent: rotate3
+Visiting function declaration for main
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 8  12
+SET the stellIDENT: x 2
+
+Visiting StellaIdent: x
+SomereturnType
+visitTypeRecord
+visitListRecordFieldType: 
+visitARecordFieldType
+Visiting StellaIdent: a
+Visiting NAT: 8  25
+visitARecordFieldType
+Visiting StellaIdent: b
+Visiting NAT: 8  34
+visitARecordFieldType
+Visiting StellaIdent: c
+Visiting NAT: 8  43
+visitNoThrowType
+visitListDecl: 
+visitApplication
+visitVar
+Visiting StellaIdent: rotate3
+visitListExpr: 
+----Before : 
+visitRecord
+visitListBinding: 
+visitABinding
+Visiting StellaIdent: x
+visitVar
+Visiting StellaIdent: x
+visitABinding
+Visiting StellaIdent: y
+visitSucc
+visitVar
+Visiting StellaIdent: x
+visitABinding
+Visiting StellaIdent: z
+visitSucc
+visitSucc
+visitVar
+Visiting StellaIdent: x
+ERROR: mismatch this params on line: 9
+2 1
+0 0
+0 0
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/records/ill-typed/bad-records-1.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/records/ill-typed/bad-records-1.stella" time elapsed: 00:00:00
+----------------------------------------------------------
+
+22/37 Testing: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/sum-types/ill-typed/bad-sum-types-1.stella
+22/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/sum-types/ill-typed/bad-sum-types-1.stella
+Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/sum-types/ill-typed/bad-sum-types-1.stella"
+Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/sum-types/ill-typed/bad-sum-types-1.stella" start time: Apr 08 04:18 MSK
+Output:
+----------------------------------------------------------
+parsing succeeded!
+prog is not null
+Start Program
+visitLanguageCore
+visitListExtension: 
+visitAnExtensionvisitListExtensionName: 
+visitExtensionName: #sum-types
+visitListDecl: 
+Visiting function declaration for g
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+visitTypeSum
+Nat + (Bool + (fn (Nat) -> Nat))  
+
+Nat + (Bool + (fn (Nat) -> Nat)) 
+Nat     Bool + (fn (Nat) -> Nat) 
+
+Visiting NAT: 4  9
+visitTypeSum
+Bool + (fn (Nat) -> Nat)  
+
+Bool + (fn (Nat) -> Nat) 
+Bool     fn (Nat) -> Nat 
+
+visitBool
+AMAZING WOKR: Bool 
+
+visitTypeFun
+visitListType: 
+Visiting NAT: 4  27
+Visiting NAT: 4  35
+SET the stellIDENT: x 6
+
+Visiting StellaIdent: x
+SomereturnType
+Visiting NAT: 4  45
+visitNoThrowType
+visitListDecl: 
+visitMatch
+visitVar
+Visiting StellaIdent: x
+visitListMatchCase: 
+visitAMatchCase
+visitPatternInl
+visitPatternVar
+ASSIGN: n 2
+NEXT: 6
+
+Visiting StellaIdent: n
+BEFORE EXPR:
+6
+
+visitSucc
+visitVar
+Visiting StellaIdent: n
+MAY BE RETURN TYPE:
+AFTER EXPR: 1 1 6
+visitAMatchCase
+visitPatternInr
+visitPatternVar
+ASSIGN: bf 6
+NEXT: 6
+
+Visiting StellaIdent: bf
+BEFORE EXPR:
+6
+
+visitMatch
+visitVar
+Visiting StellaIdent: bf
+visitListMatchCase: 
+visitAMatchCase
+visitPatternInr
+visitPatternVar
+ASSIGN: b 3
+NEXT: 6
+
+Visiting StellaIdent: b
+BEFORE EXPR:
+6
+
+VisitIf
+visitVar
+Visiting StellaIdent: b
+ERROR: if condition type should be bool. On line:8 char:23
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/sum-types/ill-typed/bad-sum-types-1.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/sum-types/ill-typed/bad-sum-types-1.stella" time elapsed: 00:00:00
+----------------------------------------------------------
+
+23/37 Testing: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/tuples/ill-typed/bad-tuples-1.stella
+23/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/tuples/ill-typed/bad-tuples-1.stella
+Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/tuples/ill-typed/bad-tuples-1.stella"
+Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/tuples/ill-typed/bad-tuples-1.stella" start time: Apr 08 04:18 MSK
+Output:
+----------------------------------------------------------
+parsing succeeded!
+prog is not null
+Start Program
+visitLanguageCore
+visitListExtension: 
+visitAnExtensionvisitListExtensionName: 
+visitExtensionName: #tuples
+visitListDecl: 
+Visiting function declaration for rotate3
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+visitTypeTuple
+visitListType: 
+Visiting NAT: 4  16
+Visiting NAT: 4  21
+Visiting NAT: 4  26
+SET the stellIDENT: p 5
+
+Visiting StellaIdent: p
+SomereturnType
+visitTypeTuple
+visitListType: 
+Visiting NAT: 4  36
+Visiting NAT: 4  41
+Visiting NAT: 4  46
+visitNoThrowType
+visitListDecl: 
+visitTuple
+visitListExpr: 
+----Before : 
+visitDotTuple
+visitVar
+Visiting StellaIdent: p
+visitInt: 3
+----Before : 
+visitDotTuple
+visitVar
+Visiting StellaIdent: p
+visitInt: 1
+----Before : 
+visitDotTuple
+visitVar
+Visiting StellaIdent: p
+visitInt: 2
+Fucntion go out: 5 5
+FIRST: p
+Visiting StellaIdent: rotate3
+Visiting function declaration for main
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 8  12
+SET the stellIDENT: x 2
+
+Visiting StellaIdent: x
+SomereturnType
+visitTypeTuple
+visitListType: 
+Visiting NAT: 8  21
+Visiting NAT: 8  26
+Visiting NAT: 8  31
+visitNoThrowType
+visitListDecl: 
+visitApplication
+visitVar
+Visiting StellaIdent: rotate3
+visitListExpr: 
+----Before : 
+visitTuple
+visitListExpr: 
+----Before : 
+visitVar
+Visiting StellaIdent: x
+----Before : 
+visitSucc
+visitVar
+Visiting StellaIdent: x
+----Before : 
+visitSucc
+visitSucc
+visitVar
+Visiting StellaIdent: x
+----Before : 
+ConstInt
+visitInt: 0
+ERROR: mismatch this params on line: 9
+5 5
+4 3
+0 0
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/tuples/ill-typed/bad-tuples-1.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/tuples/ill-typed/bad-tuples-1.stella" time elapsed: 00:00:00
+----------------------------------------------------------
+
+24/37 Testing: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/ill-typed/bad-variants-1.stella
+24/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/ill-typed/bad-variants-1.stella
+Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/ill-typed/bad-variants-1.stella"
+Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/ill-typed/bad-variants-1.stella" start time: Apr 08 04:18 MSK
+Output:
+----------------------------------------------------------
+parsing succeeded!
+prog is not null
+Start Program
+visitLanguageCore
+visitListExtension: 
+visitAnExtensionvisitListExtensionName: 
+visitExtensionName: #variants
+visitAnExtensionvisitListExtensionName: 
+visitExtensionName: #type-ascriptions
+visitListDecl: 
+Visiting function declaration for g
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+visitTypeVariant
+visitListVariantFieldType: 
+visitAVariantFieldType
+Visiting StellaIdent: number
+visitSomeTyping
+Visiting NAT: 5  21
+visitAVariantFieldType
+Visiting StellaIdent: boolean
+visitSomeTyping
+visitBool
+AMAZING WOKR: Bool 
+
+visitAVariantFieldType
+Visiting StellaIdent: function
+visitSomeTyping
+visitTypeFun
+visitListType: 
+Visiting NAT: 5  56
+Visiting NAT: 5  64
+SET the stellIDENT: x 3
+
+Visiting StellaIdent: x
+SomereturnType
+Visiting NAT: 5  75
+visitNoThrowType
+visitListDecl: 
+visitMatch
+visitVar
+Visiting StellaIdent: x
+ERROR: It's not sum type. On line6 at position: 9
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/ill-typed/bad-variants-1.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/ill-typed/bad-variants-1.stella" time elapsed: 00:00:00
+----------------------------------------------------------
+
+25/37 Testing: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/factorial.stella
+25/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/factorial.stella
+Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/factorial.stella"
+Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/factorial.stella" start time: Apr 08 04:18 MSK
+Output:
+----------------------------------------------------------
+parsing succeeded!
+prog is not null
+Start Program
+visitLanguageCore
+visitListExtension: 
+visitListDecl: 
+Visiting function declaration for Nat2Nat::const
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+visitTypeFun
+visitListType: 
+Visiting NAT: 4  25
+Visiting NAT: 4  33
+SET the stellIDENT: f 3
+
+Visiting StellaIdent: f
+SomereturnType
+visitTypeFun
+visitListType: 
+Visiting NAT: 4  45
+visitTypeFun
+visitListType: 
+Visiting NAT: 4  57
+Visiting NAT: 4  65
+visitNoThrowType
+visitListDecl: 
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 5  16
+SET the stellIDENT: x 2
+
+Visiting StellaIdent: x
+visitVar
+Visiting StellaIdent: f
+Fucntion go out: 3 3
+FIRST: f
+FIRST: x
+Visiting StellaIdent: Nat2Nat::const
+Visiting function declaration for Nat::add
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 9  16
+SET the stellIDENT: n 2
+
+Visiting StellaIdent: n
+SomereturnType
+visitTypeFun
+visitListType: 
+Visiting NAT: 9  28
+Visiting NAT: 9  36
+visitNoThrowType
+visitListDecl: 
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 10  16
+SET the stellIDENT: m 2
+
+Visiting StellaIdent: m
+visitNatRec
+visitVar
+Visiting StellaIdent: n
+visitVar
+Visiting StellaIdent: m
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 11  33
+SET the stellIDENT: i 2
+
+Visiting StellaIdent: i
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 12  20
+SET the stellIDENT: r 2
+
+Visiting StellaIdent: r
+visitSucc
+visitVar
+Visiting StellaIdent: r
+FIRST: i
+FIRST: r
+Fucntion go out: 3 3
+FIRST: n
+FIRST: m
+Visiting StellaIdent: Nat::add
+Visiting function declaration for Nat::mul
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 17  16
+SET the stellIDENT: n 2
+
+Visiting StellaIdent: n
+SomereturnType
+visitTypeFun
+visitListType: 
+Visiting NAT: 17  28
+Visiting NAT: 17  36
+visitNoThrowType
+visitListDecl: 
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 18  16
+SET the stellIDENT: m 2
+
+Visiting StellaIdent: m
+visitNatRec
+visitVar
+Visiting StellaIdent: n
+ConstInt
+visitInt: 0
+visitApplication
+visitVar
+Visiting StellaIdent: Nat2Nat::const
+visitListExpr: 
+----Before : 
+visitApplication
+visitVar
+Visiting StellaIdent: Nat::add
+visitListExpr: 
+----Before : 
+visitVar
+Visiting StellaIdent: m
+Fucntion go out: 3 3
+FIRST: n
+FIRST: m
+Visiting StellaIdent: Nat::mul
+Visiting function declaration for factorial
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 24  17
+SET the stellIDENT: n 2
+
+Visiting StellaIdent: n
+SomereturnType
+Visiting NAT: 24  25
+visitNoThrowType
+visitListDecl: 
+visitNatRec
+visitVar
+Visiting StellaIdent: n
+ConstInt
+visitInt: 1
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 25  31
+SET the stellIDENT: i 2
+
+Visiting StellaIdent: i
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 26  18
+SET the stellIDENT: r 2
+
+Visiting StellaIdent: r
+visitApplication
+visitApplication
+visitVar
+Visiting StellaIdent: Nat::mul
+visitListExpr: 
+----Before : 
+visitVar
+Visiting StellaIdent: r
+visitListExpr: 
+----Before : 
+visitSucc
+visitVar
+Visiting StellaIdent: i
+FIRST: i
+FIRST: r
+Fucntion go out: 2 2
+FIRST: n
+Visiting StellaIdent: factorial
+Visiting function declaration for main
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 31  12
+SET the stellIDENT: n 2
+
+Visiting StellaIdent: n
+SomereturnType
+Visiting NAT: 31  20
+visitNoThrowType
+visitListDecl: 
+visitApplication
+visitVar
+Visiting StellaIdent: factorial
+visitListExpr: 
+----Before : 
+visitVar
+Visiting StellaIdent: n
+Fucntion go out: 2 2
+FIRST: n
+Visiting StellaIdent: main
+FIRST: Nat2Nat::const
+FIRST: Nat::add
+FIRST: Nat::mul
+FIRST: factorial
+FIRST: main
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/factorial.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/factorial.stella" time elapsed: 00:00:00
+----------------------------------------------------------
+
+26/37 Testing: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/higher-order-1.stella
+26/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/higher-order-1.stella
+Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/higher-order-1.stella"
+Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/higher-order-1.stella" start time: Apr 08 04:18 MSK
+Output:
+----------------------------------------------------------
+parsing succeeded!
+prog is not null
+Start Program
+visitLanguageCore
+visitListExtension: 
+visitListDecl: 
+Visiting function declaration for iszero
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 3  14
+SET the stellIDENT: n 2
+
+Visiting StellaIdent: n
+SomereturnType
+visitBool
+AMAZING WOKR: Bool 
+
+visitNoThrowType
+visitListDecl: 
+visitNatRec
+visitVar
+Visiting StellaIdent: n
+ConstTrue 
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 4  36
+SET the stellIDENT: i 2
+
+Visiting StellaIdent: i
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+visitBool
+AMAZING WOKR: Bool 
+
+SET the stellIDENT: r 1
+
+Visiting StellaIdent: r
+ConstTrue 
+FIRST: i
+FIRST: r
+Fucntion go out: 1 1
+FIRST: n
+Visiting StellaIdent: iszero
+Visiting function declaration for f
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+visitTypeFun
+visitListType: 
+visitBool
+AMAZING WOKR: Bool 
+
+Visiting NAT: 11  21
+SET the stellIDENT: g 3
+
+Visiting StellaIdent: g
+SomereturnType
+visitTypeFun
+visitListType: 
+Visiting NAT: 11  32
+Visiting NAT: 11  40
+visitNoThrowType
+visitListDecl: 
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 12  18
+SET the stellIDENT: n 2
+
+Visiting StellaIdent: n
+visitApplication
+visitVar
+Visiting StellaIdent: g
+visitListExpr: 
+----Before : 
+VisitIf
+visitApplication
+visitVar
+Visiting StellaIdent: iszero
+visitListExpr: 
+----Before : 
+visitVar
+Visiting StellaIdent: n
+ConstFalse
+ConstTrue 
+Fucntion go out: 3 3
+FIRST: g
+FIRST: n
+Visiting StellaIdent: f
+Visiting function declaration for main
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 17  12
+SET the stellIDENT: n 2
+
+Visiting StellaIdent: n
+SomereturnType
+Visiting NAT: 17  20
+visitNoThrowType
+visitListDecl: 
+visitApplication
+visitApplication
+visitVar
+Visiting StellaIdent: f
+visitListExpr: 
+----Before : 
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+visitBool
+AMAZING WOKR: Bool 
+
+SET the stellIDENT: x 1
+
+Visiting StellaIdent: x
+VisitIf
+visitVar
+Visiting StellaIdent: x
+visitVar
+Visiting StellaIdent: n
+visitSucc
+visitVar
+Visiting StellaIdent: n
+visitListExpr: 
+----Before : 
+ConstInt
+visitInt: 0
+Fucntion go out: 2 2
+FIRST: n
+FIRST: x
+Visiting StellaIdent: main
+FIRST: iszero
+FIRST: f
+FIRST: main
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/higher-order-1.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/higher-order-1.stella" time elapsed: 00:00:00
+----------------------------------------------------------
+
+27/37 Testing: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/increment_twice.stella
+27/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/increment_twice.stella
+Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/increment_twice.stella"
+Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/increment_twice.stella" start time: Apr 08 04:18 MSK
+Output:
+----------------------------------------------------------
+parsing succeeded!
+prog is not null
+Start Program
+visitLanguageCore
+visitListExtension: 
+visitListDecl: 
+Visiting function declaration for increment_twice
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 4  23
+SET the stellIDENT: n 2
+
+Visiting StellaIdent: n
+SomereturnType
+Visiting NAT: 4  31
+visitNoThrowType
+visitListDecl: 
+visitSucc
+visitSucc
+visitVar
+Visiting StellaIdent: n
+Fucntion go out: 2 2
+FIRST: n
+Visiting StellaIdent: increment_twice
+Visiting function declaration for main
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 8  12
+SET the stellIDENT: n 2
+
+Visiting StellaIdent: n
+SomereturnType
+Visiting NAT: 8  20
+visitNoThrowType
+visitListDecl: 
+visitApplication
+visitVar
+Visiting StellaIdent: increment_twice
+visitListExpr: 
+----Before : 
+visitVar
+Visiting StellaIdent: n
+Fucntion go out: 2 2
+FIRST: n
+Visiting StellaIdent: main
+FIRST: increment_twice
+FIRST: main
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/increment_twice.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/increment_twice.stella" time elapsed: 00:00:00
+----------------------------------------------------------
+
+28/37 Testing: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/logical-operators.stella
+28/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/logical-operators.stella
+Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/logical-operators.stella"
+Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/logical-operators.stella" start time: Apr 08 04:18 MSK
+Output:
+----------------------------------------------------------
+parsing succeeded!
+prog is not null
+Start Program
+visitLanguageCore
+visitListExtension: 
+visitListDecl: 
+Visiting function declaration for Bool::not
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+visitBool
+AMAZING WOKR: Bool 
+
+SET the stellIDENT: b 1
+
+Visiting StellaIdent: b
+SomereturnType
+visitBool
+AMAZING WOKR: Bool 
+
+visitNoThrowType
+visitListDecl: 
+VisitIf
+visitVar
+Visiting StellaIdent: b
+ConstFalse
+ConstTrue 
+Fucntion go out: 1 1
+FIRST: b
+Visiting StellaIdent: Bool::not
+Visiting function declaration for Bool::or
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+visitBool
+AMAZING WOKR: Bool 
+
+SET the stellIDENT: a 1
+
+Visiting StellaIdent: a
+SomereturnType
+visitTypeFun
+visitListType: 
+visitBool
+AMAZING WOKR: Bool 
+
+visitBool
+AMAZING WOKR: Bool 
+
+visitNoThrowType
+visitListDecl: 
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+visitBool
+AMAZING WOKR: Bool 
+
+SET the stellIDENT: b 1
+
+Visiting StellaIdent: b
+VisitIf
+visitVar
+Visiting StellaIdent: a
+ConstTrue 
+visitVar
+Visiting StellaIdent: b
+Fucntion go out: 3 3
+FIRST: a
+FIRST: b
+Visiting StellaIdent: Bool::or
+Visiting function declaration for Bool::and
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+visitBool
+AMAZING WOKR: Bool 
+
+SET the stellIDENT: a 1
+
+Visiting StellaIdent: a
+SomereturnType
+visitTypeFun
+visitListType: 
+visitBool
+AMAZING WOKR: Bool 
+
+visitBool
+AMAZING WOKR: Bool 
+
+visitNoThrowType
+visitListDecl: 
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+visitBool
+AMAZING WOKR: Bool 
+
+SET the stellIDENT: b 1
+
+Visiting StellaIdent: b
+VisitIf
+visitVar
+Visiting StellaIdent: a
+visitVar
+Visiting StellaIdent: b
+ConstFalse
+Fucntion go out: 3 3
+FIRST: a
+FIRST: b
+Visiting StellaIdent: Bool::and
+Visiting function declaration for Bool::xor
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+visitBool
+AMAZING WOKR: Bool 
+
+SET the stellIDENT: a 1
+
+Visiting StellaIdent: a
+SomereturnType
+visitTypeFun
+visitListType: 
+visitBool
+AMAZING WOKR: Bool 
+
+visitBool
+AMAZING WOKR: Bool 
+
+visitNoThrowType
+visitListDecl: 
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+visitBool
+AMAZING WOKR: Bool 
+
+SET the stellIDENT: b 1
+
+Visiting StellaIdent: b
+visitApplication
+visitApplication
+visitVar
+Visiting StellaIdent: Bool::or
+visitListExpr: 
+----Before : 
+visitApplication
+visitApplication
+visitVar
+Visiting StellaIdent: Bool::and
+visitListExpr: 
+----Before : 
+visitVar
+Visiting StellaIdent: a
+visitListExpr: 
+----Before : 
+visitApplication
+visitVar
+Visiting StellaIdent: Bool::not
+visitListExpr: 
+----Before : 
+visitVar
+Visiting StellaIdent: b
+visitListExpr: 
+----Before : 
+visitApplication
+visitApplication
+visitVar
+Visiting StellaIdent: Bool::and
+visitListExpr: 
+----Before : 
+visitApplication
+visitVar
+Visiting StellaIdent: Bool::not
+visitListExpr: 
+----Before : 
+visitVar
+Visiting StellaIdent: a
+visitListExpr: 
+----Before : 
+visitVar
+Visiting StellaIdent: b
+Fucntion go out: 3 3
+FIRST: a
+FIRST: b
+Visiting StellaIdent: Bool::xor
+Visiting function declaration for main
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+visitBool
+AMAZING WOKR: Bool 
+
+SET the stellIDENT: n 1
+
+Visiting StellaIdent: n
+SomereturnType
+visitBool
+AMAZING WOKR: Bool 
+
+visitNoThrowType
+visitListDecl: 
+visitApplication
+visitApplication
+visitVar
+Visiting StellaIdent: Bool::xor
+visitListExpr: 
+----Before : 
+visitApplication
+visitApplication
+visitVar
+Visiting StellaIdent: Bool::and
+visitListExpr: 
+----Before : 
+visitVar
+Visiting StellaIdent: n
+visitListExpr: 
+----Before : 
+visitApplication
+visitVar
+Visiting StellaIdent: Bool::not
+visitListExpr: 
+----Before : 
+visitVar
+Visiting StellaIdent: n
+visitListExpr: 
+----Before : 
+visitApplication
+visitApplication
+visitVar
+Visiting StellaIdent: Bool::or
+visitListExpr: 
+----Before : 
+visitApplication
+visitVar
+Visiting StellaIdent: Bool::not
+visitListExpr: 
+----Before : 
+visitVar
+Visiting StellaIdent: n
+visitListExpr: 
+----Before : 
+visitVar
+Visiting StellaIdent: n
+Fucntion go out: 1 1
+FIRST: n
+Visiting StellaIdent: main
+FIRST: Bool::not
+FIRST: Bool::or
+FIRST: Bool::and
+FIRST: Bool::xor
+FIRST: main
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/logical-operators.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/logical-operators.stella" time elapsed: 00:00:00
+----------------------------------------------------------
+
+29/37 Testing: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/squares.stella
+29/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/squares.stella
+Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/squares.stella"
+Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/squares.stella" start time: Apr 08 04:18 MSK
+Output:
+----------------------------------------------------------
+parsing succeeded!
+prog is not null
+Start Program
+visitLanguageCore
+visitListExtension: 
+visitListDecl: 
+Visiting function declaration for Nat::add
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 4  16
+SET the stellIDENT: n 2
+
+Visiting StellaIdent: n
+SomereturnType
+visitTypeFun
+visitListType: 
+Visiting NAT: 4  27
+Visiting NAT: 4  35
+visitNoThrowType
+visitListDecl: 
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 5  16
+SET the stellIDENT: m 2
+
+Visiting StellaIdent: m
+visitNatRec
+visitVar
+Visiting StellaIdent: n
+visitVar
+Visiting StellaIdent: m
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 6  33
+SET the stellIDENT: i 2
+
+Visiting StellaIdent: i
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 7  20
+SET the stellIDENT: r 2
+
+Visiting StellaIdent: r
+visitSucc
+visitVar
+Visiting StellaIdent: r
+FIRST: i
+FIRST: r
+Fucntion go out: 3 3
+FIRST: n
+FIRST: m
+Visiting StellaIdent: Nat::add
+Visiting function declaration for square
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 15  14
+SET the stellIDENT: n 2
+
+Visiting StellaIdent: n
+SomereturnType
+Visiting NAT: 15  22
+visitNoThrowType
+visitListDecl: 
+visitNatRec
+visitVar
+Visiting StellaIdent: n
+ConstInt
+visitInt: 0
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 16  31
+SET the stellIDENT: i 2
+
+Visiting StellaIdent: i
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 17  20
+SET the stellIDENT: r 2
+
+Visiting StellaIdent: r
+visitApplication
+visitApplication
+visitVar
+Visiting StellaIdent: Nat::add
+visitListExpr: 
+----Before : 
+visitVar
+Visiting StellaIdent: i
+visitListExpr: 
+----Before : 
+visitApplication
+visitApplication
+visitVar
+Visiting StellaIdent: Nat::add
+visitListExpr: 
+----Before : 
+visitVar
+Visiting StellaIdent: i
+visitListExpr: 
+----Before : 
+visitSucc
+visitVar
+Visiting StellaIdent: r
+FIRST: i
+FIRST: r
+Fucntion go out: 2 2
+FIRST: n
+Visiting StellaIdent: square
+Visiting function declaration for main
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 24  12
+SET the stellIDENT: n 2
+
+Visiting StellaIdent: n
+SomereturnType
+Visiting NAT: 24  20
+visitNoThrowType
+visitListDecl: 
+visitApplication
+visitVar
+Visiting StellaIdent: square
+visitListExpr: 
+----Before : 
+visitVar
+Visiting StellaIdent: n
+Fucntion go out: 2 2
+FIRST: n
+Visiting StellaIdent: main
+FIRST: Nat::add
+FIRST: square
+FIRST: main
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/squares.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/squares.stella" time elapsed: 00:00:00
+----------------------------------------------------------
+
+30/37 Testing: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/lists/well-typed/lists-1.stella
+30/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/lists/well-typed/lists-1.stella
+Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/lists/well-typed/lists-1.stella"
+Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/lists/well-typed/lists-1.stella" start time: Apr 08 04:18 MSK
+Output:
+----------------------------------------------------------
+parsing succeeded!
+prog is not null
+Start Program
+visitLanguageCore
+visitListExtension: 
+visitAnExtensionvisitListExtensionName: 
+visitExtensionName: #lists
+visitListDecl: 
+Visiting function declaration for length
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+visitTypeList
+Visiting NAT: 4  18
+SET the stellIDENT: list 7
+
+Visiting StellaIdent: list
+SomereturnType
+Visiting NAT: 4  27
+visitNoThrowType
+visitListDecl: 
+VisitIf
+visitIsEmpty
+visitVar
+Visiting StellaIdent: list
+ConstInt
+visitInt: 0
+visitSucc
+visitApplication
+visitVar
+Visiting StellaIdent: length
+ERROR: This is not function. On line: 7 at position: 14
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/lists/well-typed/lists-1.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/lists/well-typed/lists-1.stella" time elapsed: 00:00:00
+----------------------------------------------------------
+
+31/37 Testing: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/pairs/well-typed/pairs-1.stella
+31/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/pairs/well-typed/pairs-1.stella
+Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/pairs/well-typed/pairs-1.stella"
+Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/pairs/well-typed/pairs-1.stella" start time: Apr 08 04:18 MSK
+Output:
+----------------------------------------------------------
+parsing succeeded!
+prog is not null
+Start Program
+visitLanguageCore
+visitListExtension: 
+visitAnExtensionvisitListExtensionName: 
+visitExtensionName: #pairs
+visitListDecl: 
+Visiting function declaration for swap
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+visitTypeTuple
+visitListType: 
+Visiting NAT: 4  13
+Visiting NAT: 4  18
+SET the stellIDENT: p 5
+
+Visiting StellaIdent: p
+SomereturnType
+visitTypeTuple
+visitListType: 
+Visiting NAT: 4  28
+Visiting NAT: 4  33
+visitNoThrowType
+visitListDecl: 
+visitTuple
+visitListExpr: 
+----Before : 
+visitDotTuple
+visitVar
+Visiting StellaIdent: p
+visitInt: 2
+----Before : 
+visitDotTuple
+visitVar
+Visiting StellaIdent: p
+visitInt: 1
+Fucntion go out: 5 5
+FIRST: p
+Visiting StellaIdent: swap
+Visiting function declaration for main
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 8  12
+SET the stellIDENT: x 2
+
+Visiting StellaIdent: x
+SomereturnType
+Visiting NAT: 8  20
+visitNoThrowType
+visitListDecl: 
+visitDotTuple
+visitApplication
+visitVar
+Visiting StellaIdent: swap
+visitListExpr: 
+----Before : 
+visitApplication
+visitVar
+Visiting StellaIdent: swap
+visitListExpr: 
+----Before : 
+visitTuple
+visitListExpr: 
+----Before : 
+ConstInt
+visitInt: 0
+----Before : 
+visitVar
+Visiting StellaIdent: x
+visitInt: 2
+Fucntion go out: 2 2
+FIRST: x
+Visiting StellaIdent: main
+FIRST: swap
+FIRST: main
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/pairs/well-typed/pairs-1.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/pairs/well-typed/pairs-1.stella" time elapsed: 00:00:00
+----------------------------------------------------------
+
+32/37 Testing: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/records/well-typed/records-1.stella
+32/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/records/well-typed/records-1.stella
+Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/records/well-typed/records-1.stella"
+Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/records/well-typed/records-1.stella" start time: Apr 08 04:18 MSK
+Output:
+----------------------------------------------------------
+parsing succeeded!
+prog is not null
+Start Program
+visitLanguageCore
+visitListExtension: 
+visitAnExtensionvisitListExtensionName: 
+visitExtensionName: #records
+visitListDecl: 
+Visiting function declaration for rotate3
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+visitTypeRecord
+visitListRecordFieldType: 
+visitARecordFieldType
+Visiting StellaIdent: x
+Visiting NAT: 4  20
+visitARecordFieldType
+Visiting StellaIdent: y
+Visiting NAT: 4  29
+visitARecordFieldType
+Visiting StellaIdent: z
+Visiting NAT: 4  38
+SET the stellIDENT: p 2
+
+Visiting StellaIdent: p
+SomereturnType
+visitTypeRecord
+visitListRecordFieldType: 
+visitARecordFieldType
+Visiting StellaIdent: a
+Visiting NAT: 4  52
+visitARecordFieldType
+Visiting StellaIdent: b
+Visiting NAT: 4  61
+visitARecordFieldType
+Visiting StellaIdent: c
+Visiting NAT: 4  70
+visitNoThrowType
+visitListDecl: 
+visitRecord
+visitListBinding: 
+visitABinding
+Visiting StellaIdent: a
+visitDotRecord
+visitVar
+Visiting StellaIdent: p
+Visiting StellaIdent: z
+visitABinding
+Visiting StellaIdent: b
+visitDotRecord
+visitVar
+Visiting StellaIdent: p
+Visiting StellaIdent: y
+visitABinding
+Visiting StellaIdent: c
+visitDotRecord
+visitVar
+Visiting StellaIdent: p
+Visiting StellaIdent: x
+Fucntion go out: 2 0
+FIRST: p
+Visiting StellaIdent: rotate3
+Visiting function declaration for main
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 8  12
+SET the stellIDENT: x 2
+
+Visiting StellaIdent: x
+SomereturnType
+visitTypeRecord
+visitListRecordFieldType: 
+visitARecordFieldType
+Visiting StellaIdent: a
+Visiting NAT: 8  25
+visitARecordFieldType
+Visiting StellaIdent: b
+Visiting NAT: 8  34
+visitARecordFieldType
+Visiting StellaIdent: c
+Visiting NAT: 8  43
+visitNoThrowType
+visitListDecl: 
+visitApplication
+visitVar
+Visiting StellaIdent: rotate3
+visitListExpr: 
+----Before : 
+visitRecord
+visitListBinding: 
+visitABinding
+Visiting StellaIdent: x
+visitVar
+Visiting StellaIdent: x
+visitABinding
+Visiting StellaIdent: y
+visitSucc
+visitVar
+Visiting StellaIdent: x
+visitABinding
+Visiting StellaIdent: z
+visitSucc
+visitSucc
+visitVar
+Visiting StellaIdent: x
+ERROR: mismatch this params on line: 9
+2 0
+0 0
+0 0
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/records/well-typed/records-1.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/records/well-typed/records-1.stella" time elapsed: 00:00:00
+----------------------------------------------------------
+
+33/37 Testing: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/sum-types/well-typed/sum-types-1.stella
+33/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/sum-types/well-typed/sum-types-1.stella
+Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/sum-types/well-typed/sum-types-1.stella"
+Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/sum-types/well-typed/sum-types-1.stella" start time: Apr 08 04:18 MSK
+Output:
+----------------------------------------------------------
+parsing succeeded!
+prog is not null
+Start Program
+visitLanguageCore
+visitListExtension: 
+visitAnExtensionvisitListExtensionName: 
+visitExtensionName: #sum-types
+visitListDecl: 
+Visiting function declaration for g
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+visitTypeSum
+Nat + (Bool + (fn (Nat) -> Nat))  
+
+Nat + (Bool + (fn (Nat) -> Nat)) 
+Nat     Bool + (fn (Nat) -> Nat) 
+
+Visiting NAT: 4  9
+visitTypeSum
+Bool + (fn (Nat) -> Nat)  
+
+Bool + (fn (Nat) -> Nat) 
+Bool     fn (Nat) -> Nat 
+
+visitBool
+AMAZING WOKR: Bool 
+
+visitTypeFun
+visitListType: 
+Visiting NAT: 4  27
+Visiting NAT: 4  35
+SET the stellIDENT: x 6
+
+Visiting StellaIdent: x
+SomereturnType
+Visiting NAT: 4  45
+visitNoThrowType
+visitListDecl: 
+visitMatch
+visitVar
+Visiting StellaIdent: x
+visitListMatchCase: 
+visitAMatchCase
+visitPatternInl
+visitPatternVar
+ASSIGN: n 2
+NEXT: 6
+
+Visiting StellaIdent: n
+BEFORE EXPR:
+6
+
+visitSucc
+visitVar
+Visiting StellaIdent: n
+MAY BE RETURN TYPE:
+AFTER EXPR: 1 1 6
+visitAMatchCase
+visitPatternInr
+visitPatternVar
+ASSIGN: bf 6
+NEXT: 6
+
+Visiting StellaIdent: bf
+BEFORE EXPR:
+6
+
+visitMatch
+visitVar
+Visiting StellaIdent: bf
+visitListMatchCase: 
+visitAMatchCase
+visitPatternInl
+visitPatternVar
+ASSIGN: b 1
+NEXT: 6
+
+Visiting StellaIdent: b
+BEFORE EXPR:
+6
+
+VisitIf
+visitVar
+Visiting StellaIdent: b
+visitSucc
+ConstInt
+visitInt: 0
+ConstInt
+visitInt: 0
+MAY BE RETURN TYPE:
+AFTER EXPR: 2 2 6
+visitAMatchCase
+visitPatternInr
+visitPatternVar
+ASSIGN: f 3
+NEXT: 6
+
+Visiting StellaIdent: f
+BEFORE EXPR:
+6
+
+visitApplication
+visitVar
+Visiting StellaIdent: f
+visitListExpr: 
+----Before : 
+visitApplication
+visitVar
+Visiting StellaIdent: f
+visitListExpr: 
+----Before : 
+visitSucc
+ConstInt
+visitInt: 0
+MAY BE RETURN TYPE:
+AFTER EXPR: 2 2 6
+MAY BE RETURN TYPE:
+AFTER EXPR: 1 1 6
+Fucntion go out: 2 6
+FIRST: x
+FIRST: n
+FIRST: bf
+FIRST: b
+FIRST: f
+Visiting StellaIdent: g
+Visiting function declaration for main
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 14  12
+SET the stellIDENT: x 2
+
+Visiting StellaIdent: x
+SomereturnType
+Visiting NAT: 14  20
+visitNoThrowType
+visitListDecl: 
+visitApplication
+visitVar
+Visiting StellaIdent: g
+visitListExpr: 
+----Before : 
+visitInr
+visitInr
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 15  26
+SET the stellIDENT: n 2
+
+Visiting StellaIdent: n
+visitApplication
+visitVar
+Visiting StellaIdent: g
+visitListExpr: 
+----Before : 
+visitInl
+visitVar
+Visiting StellaIdent: n
+Fucntion go out: 2 2
+FIRST: x
+FIRST: n
+Visiting StellaIdent: main
+FIRST: g
+FIRST: main
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/sum-types/well-typed/sum-types-1.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/sum-types/well-typed/sum-types-1.stella" time elapsed: 00:00:00
+----------------------------------------------------------
+
+34/37 Testing: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/sum-types/well-typed/sum-types-2.stella
+34/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/sum-types/well-typed/sum-types-2.stella
+Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/sum-types/well-typed/sum-types-2.stella"
+Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/sum-types/well-typed/sum-types-2.stella" start time: Apr 08 04:18 MSK
+Output:
+----------------------------------------------------------
+parsing succeeded!
+prog is not null
+Start Program
+visitLanguageCore
+visitListExtension: 
+visitAnExtensionvisitListExtensionName: 
+visitExtensionName: #sum-types
+visitListDecl: 
+Visiting function declaration for g
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+visitTypeSum
+Nat + (Bool + (fn (Nat) -> Nat))  
+
+Nat + (Bool + (fn (Nat) -> Nat)) 
+Nat     Bool + (fn (Nat) -> Nat) 
+
+Visiting NAT: 4  9
+visitTypeSum
+Bool + (fn (Nat) -> Nat)  
+
+Bool + (fn (Nat) -> Nat) 
+Bool     fn (Nat) -> Nat 
+
+visitBool
+AMAZING WOKR: Bool 
+
+visitTypeFun
+visitListType: 
+Visiting NAT: 4  27
+Visiting NAT: 4  35
+SET the stellIDENT: x 6
+
+Visiting StellaIdent: x
+SomereturnType
+Visiting NAT: 4  45
+visitNoThrowType
+visitListDecl: 
+visitMatch
+visitVar
+Visiting StellaIdent: x
+visitListMatchCase: 
+visitAMatchCase
+visitPatternInl
+visitPatternVar
+ASSIGN: n 2
+NEXT: 6
+
+Visiting StellaIdent: n
+BEFORE EXPR:
+6
+
+visitSucc
+visitVar
+Visiting StellaIdent: n
+MAY BE RETURN TYPE:
+AFTER EXPR: 1 1 6
+visitAMatchCase
+visitPatternInr
+visitPatternVar
+ASSIGN: bf 6
+NEXT: 6
+
+Visiting StellaIdent: bf
+BEFORE EXPR:
+6
+
+visitMatch
+visitVar
+Visiting StellaIdent: bf
+visitListMatchCase: 
+visitAMatchCase
+visitPatternInr
+visitPatternVar
+ASSIGN: f 3
+NEXT: 6
+
+Visiting StellaIdent: f
+BEFORE EXPR:
+6
+
+visitApplication
+visitVar
+Visiting StellaIdent: f
+visitListExpr: 
+----Before : 
+visitApplication
+visitVar
+Visiting StellaIdent: f
+visitListExpr: 
+----Before : 
+visitSucc
+ConstInt
+visitInt: 0
+MAY BE RETURN TYPE:
+AFTER EXPR: 2 2 6
+visitAMatchCase
+visitPatternInl
+visitPatternVar
+ASSIGN: b 1
+NEXT: 6
+
+Visiting StellaIdent: b
+BEFORE EXPR:
+6
+
+VisitIf
+visitVar
+Visiting StellaIdent: b
+visitSucc
+ConstInt
+visitInt: 0
+ConstInt
+visitInt: 0
+MAY BE RETURN TYPE:
+AFTER EXPR: 2 2 6
+MAY BE RETURN TYPE:
+AFTER EXPR: 1 1 6
+Fucntion go out: 2 6
+FIRST: x
+FIRST: n
+FIRST: bf
+FIRST: f
+FIRST: b
+Visiting StellaIdent: g
+Visiting function declaration for main
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 14  12
+SET the stellIDENT: x 2
+
+Visiting StellaIdent: x
+SomereturnType
+Visiting NAT: 14  20
+visitNoThrowType
+visitListDecl: 
+visitApplication
+visitVar
+Visiting StellaIdent: g
+visitListExpr: 
+----Before : 
+visitInr
+visitInr
+visitAbstraction
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 15  26
+SET the stellIDENT: n 2
+
+Visiting StellaIdent: n
+visitApplication
+visitVar
+Visiting StellaIdent: g
+visitListExpr: 
+----Before : 
+visitInl
+visitVar
+Visiting StellaIdent: n
+Fucntion go out: 2 2
+FIRST: x
+FIRST: n
+Visiting StellaIdent: main
+FIRST: g
+FIRST: main
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/sum-types/well-typed/sum-types-2.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/sum-types/well-typed/sum-types-2.stella" time elapsed: 00:00:00
+----------------------------------------------------------
+
+35/37 Testing: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/tuples/well-typed/tuples-1.stella
+35/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/tuples/well-typed/tuples-1.stella
+Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/tuples/well-typed/tuples-1.stella"
+Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/tuples/well-typed/tuples-1.stella" start time: Apr 08 04:18 MSK
+Output:
+----------------------------------------------------------
+parsing succeeded!
+prog is not null
+Start Program
+visitLanguageCore
+visitListExtension: 
+visitAnExtensionvisitListExtensionName: 
+visitExtensionName: #tuples
+visitListDecl: 
+Visiting function declaration for rotate3
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+visitTypeTuple
+visitListType: 
+Visiting NAT: 4  16
+Visiting NAT: 4  21
+Visiting NAT: 4  26
+SET the stellIDENT: p 5
+
+Visiting StellaIdent: p
+SomereturnType
+visitTypeTuple
+visitListType: 
+Visiting NAT: 4  36
+Visiting NAT: 4  41
+Visiting NAT: 4  46
+visitNoThrowType
+visitListDecl: 
+visitTuple
+visitListExpr: 
+----Before : 
+visitDotTuple
+visitVar
+Visiting StellaIdent: p
+visitInt: 3
+----Before : 
+visitDotTuple
+visitVar
+Visiting StellaIdent: p
+visitInt: 1
+----Before : 
+visitDotTuple
+visitVar
+Visiting StellaIdent: p
+visitInt: 2
+Fucntion go out: 5 5
+FIRST: p
+Visiting StellaIdent: rotate3
+Visiting function declaration for main
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+Visiting NAT: 8  12
+SET the stellIDENT: x 2
+
+Visiting StellaIdent: x
+SomereturnType
+visitTypeTuple
+visitListType: 
+Visiting NAT: 8  21
+Visiting NAT: 8  26
+Visiting NAT: 8  31
+visitNoThrowType
+visitListDecl: 
+visitApplication
+visitVar
+Visiting StellaIdent: rotate3
+visitListExpr: 
+----Before : 
+visitTuple
+visitListExpr: 
+----Before : 
+visitVar
+Visiting StellaIdent: x
+----Before : 
+visitSucc
+visitVar
+Visiting StellaIdent: x
+----Before : 
+visitSucc
+visitSucc
+visitVar
+Visiting StellaIdent: x
+Fucntion go out: 5 5
+FIRST: x
+Visiting StellaIdent: main
+FIRST: rotate3
+FIRST: main
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/tuples/well-typed/tuples-1.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/tuples/well-typed/tuples-1.stella" time elapsed: 00:00:00
+----------------------------------------------------------
+
+36/37 Testing: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/well-typed/variants-1.stella
+36/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/well-typed/variants-1.stella
+Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/well-typed/variants-1.stella"
+Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/well-typed/variants-1.stella" start time: Apr 08 04:18 MSK
+Output:
+----------------------------------------------------------
+parsing succeeded!
+prog is not null
+Start Program
+visitLanguageCore
+visitListExtension: 
+visitAnExtensionvisitListExtensionName: 
+visitExtensionName: #variants
+visitAnExtensionvisitListExtensionName: 
+visitExtensionName: #type-ascriptions
+visitListDecl: 
+Visiting function declaration for g
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+visitTypeVariant
+visitListVariantFieldType: 
+visitAVariantFieldType
+Visiting StellaIdent: number
+visitSomeTyping
+Visiting NAT: 5  21
+visitAVariantFieldType
+Visiting StellaIdent: boolean
+visitSomeTyping
+visitBool
+AMAZING WOKR: Bool 
+
+visitAVariantFieldType
+Visiting StellaIdent: function
+visitSomeTyping
+visitTypeFun
+visitListType: 
+Visiting NAT: 5  56
+Visiting NAT: 5  64
+SET the stellIDENT: x 3
+
+Visiting StellaIdent: x
+SomereturnType
+Visiting NAT: 5  75
+visitNoThrowType
+visitListDecl: 
+visitMatch
+visitVar
+Visiting StellaIdent: x
+ERROR: It's not sum type. On line6 at position: 9
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/well-typed/variants-1.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/well-typed/variants-1.stella" time elapsed: 00:00:00
+----------------------------------------------------------
+
+37/37 Testing: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/well-typed/variants-2.stella
+37/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/well-typed/variants-2.stella
+Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/well-typed/variants-2.stella"
+Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/well-typed/variants-2.stella" start time: Apr 08 04:18 MSK
+Output:
+----------------------------------------------------------
+parsing succeeded!
+prog is not null
+Start Program
+visitLanguageCore
+visitListExtension: 
+visitAnExtensionvisitListExtensionName: 
+visitExtensionName: #variants
+visitListDecl: 
+Visiting function declaration for g
+visitListAnnotation: 
+visitListParamDecl: 
+visitAParamDecl
+visitTypeVariant
+visitListVariantFieldType: 
+visitAVariantFieldType
+Visiting StellaIdent: number
+visitSomeTyping
+Visiting NAT: 4  21
+visitAVariantFieldType
+Visiting StellaIdent: boolean
+visitSomeTyping
+visitBool
+AMAZING WOKR: Bool 
+
+visitAVariantFieldType
+Visiting StellaIdent: function
+visitSomeTyping
+visitTypeFun
+visitListType: 
+Visiting NAT: 4  56
+Visiting NAT: 4  64
+SET the stellIDENT: x 3
+
+Visiting StellaIdent: x
+SomereturnType
+Visiting NAT: 4  75
+visitNoThrowType
+visitListDecl: 
+visitMatch
+visitVar
+Visiting StellaIdent: x
+ERROR: It's not sum type. On line5 at position: 9
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/well-typed/variants-2.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/well-typed/variants-2.stella" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Apr 08 04:18 MSK
