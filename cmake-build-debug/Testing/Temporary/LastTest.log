@@ -1,10 +1,10 @@
-Start testing: Apr 08 04:18 MSK
+Start testing: Apr 11 15:24 MSK
 ----------------------------------------------------------
 1/37 Testing: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-1.stella
 1/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-1.stella
 Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-1.stella"
 Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-1.stella" start time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-1.stella" start time: Apr 11 15:24 MSK
 Output:
 ----------------------------------------------------------
 parsing succeeded!
@@ -33,7 +33,7 @@ ERROR: This is not function. On line: 4 at position: 9
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-1.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-1.stella" end time: Apr 11 15:24 MSK
 "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-1.stella" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -41,7 +41,7 @@ Test Passed.
 2/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-2.stella
 Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-2.stella"
 Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-2.stella" start time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-2.stella" start time: Apr 11 15:24 MSK
 Output:
 ----------------------------------------------------------
 parsing succeeded!
@@ -71,7 +71,7 @@ ERROR: This is not function. On line: 4 at position: 9
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-2.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-2.stella" end time: Apr 11 15:24 MSK
 "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-2.stella" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -79,7 +79,7 @@ Test Passed.
 3/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-3.stella
 Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-3.stella"
 Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-3.stella" start time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-3.stella" start time: Apr 11 15:24 MSK
 Output:
 ----------------------------------------------------------
 parsing succeeded!
@@ -134,7 +134,7 @@ ERROR: This is not function. On line: 4 at position: 9
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-3.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-3.stella" end time: Apr 11 15:24 MSK
 "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/applying-non-function-3.stella" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -142,7 +142,7 @@ Test Passed.
 4/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/argument-type-mismatch-1.stella
 Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/argument-type-mismatch-1.stella"
 Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/argument-type-mismatch-1.stella" start time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/argument-type-mismatch-1.stella" start time: Apr 11 15:24 MSK
 Output:
 ----------------------------------------------------------
 parsing succeeded!
@@ -196,7 +196,7 @@ ERROR: mismatch this params on line: 4
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/argument-type-mismatch-1.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/argument-type-mismatch-1.stella" end time: Apr 11 15:24 MSK
 "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/argument-type-mismatch-1.stella" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -204,7 +204,7 @@ Test Passed.
 5/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/argument-type-mismatch-2.stella
 Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/argument-type-mismatch-2.stella"
 Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/argument-type-mismatch-2.stella" start time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/argument-type-mismatch-2.stella" start time: Apr 11 15:24 MSK
 Output:
 ----------------------------------------------------------
 parsing succeeded!
@@ -334,7 +334,7 @@ ERROR: mismatch this params on line: 18
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/argument-type-mismatch-2.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/argument-type-mismatch-2.stella" end time: Apr 11 15:24 MSK
 "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/argument-type-mismatch-2.stella" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -342,7 +342,7 @@ Test Passed.
 6/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/argument-type-mismatch-3.stella
 Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/argument-type-mismatch-3.stella"
 Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/argument-type-mismatch-3.stella" start time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/argument-type-mismatch-3.stella" start time: Apr 11 15:24 MSK
 Output:
 ----------------------------------------------------------
 parsing succeeded!
@@ -494,10 +494,10 @@ ERROR: mismatch this params on line: 18
 1 1
 1 1
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/argument-type-mismatch-3.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/argument-type-mismatch-3.stella" end time: Apr 11 15:24 MSK
 "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/argument-type-mismatch-3.stella" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -505,7 +505,7 @@ Test Passed.
 7/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-1.stella
 Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-1.stella"
 Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-1.stella" start time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-1.stella" start time: Apr 11 15:24 MSK
 Output:
 ----------------------------------------------------------
 parsing succeeded!
@@ -534,7 +534,7 @@ ERROR: if condition type should be bool. On line:4 char:14
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-1.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-1.stella" end time: Apr 11 15:24 MSK
 "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-1.stella" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -542,7 +542,7 @@ Test Passed.
 8/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-2.stella
 Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-2.stella"
 Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-2.stella" start time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-2.stella" start time: Apr 11 15:24 MSK
 Output:
 ----------------------------------------------------------
 parsing succeeded!
@@ -574,7 +574,7 @@ ERROR: if return different types on line: 4 position 25 and on line:4 postion35
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-2.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-2.stella" end time: Apr 11 15:24 MSK
 "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-2.stella" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -582,7 +582,7 @@ Test Passed.
 9/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-3.stella
 Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-3.stella"
 Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-3.stella" start time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-3.stella" start time: Apr 11 15:24 MSK
 Output:
 ----------------------------------------------------------
 parsing succeeded!
@@ -634,10 +634,10 @@ ERROR: mismatch this params on line: 4
 0 0
 0 0
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-3.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-3.stella" end time: Apr 11 15:24 MSK
 "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-3.stella" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -645,7 +645,7 @@ Test Passed.
 10/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-4.stella
 Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-4.stella"
 Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-4.stella" start time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-4.stella" start time: Apr 11 15:24 MSK
 Output:
 ----------------------------------------------------------
 parsing succeeded!
@@ -685,7 +685,7 @@ ERROR: if return different types on line: 4 position 26 and on line:4 postion36
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-4.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-4.stella" end time: Apr 11 15:24 MSK
 "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-if-4.stella" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -693,7 +693,7 @@ Test Passed.
 11/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-squares-1.stella
 Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-squares-1.stella"
 Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-squares-1.stella" start time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-squares-1.stella" start time: Apr 11 15:24 MSK
 Output:
 ----------------------------------------------------------
 parsing succeeded!
@@ -793,7 +793,7 @@ ERROR: This is not function. On line: 19 at position: 15
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-squares-1.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-squares-1.stella" end time: Apr 11 15:24 MSK
 "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-squares-1.stella" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -801,7 +801,7 @@ Test Passed.
 12/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-squares-2.stella
 Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-squares-2.stella"
 Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-squares-2.stella" start time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-squares-2.stella" start time: Apr 11 15:24 MSK
 Output:
 ----------------------------------------------------------
 parsing succeeded!
@@ -914,7 +914,7 @@ ERROR: NatRec 3rd argument functions: Should be same type of params type and ret
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-squares-2.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-squares-2.stella" end time: Apr 11 15:24 MSK
 "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-squares-2.stella" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -922,7 +922,7 @@ Test Passed.
 13/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-succ-1.stella
 Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-succ-1.stella"
 Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-succ-1.stella" start time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-succ-1.stella" start time: Apr 11 15:24 MSK
 Output:
 ----------------------------------------------------------
 parsing succeeded!
@@ -956,7 +956,7 @@ On line 4 at position: 44
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-succ-1.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-succ-1.stella" end time: Apr 11 15:24 MSK
 "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-succ-1.stella" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -964,7 +964,7 @@ Test Passed.
 14/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-succ-2.stella
 Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-succ-2.stella"
 Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-succ-2.stella" start time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-succ-2.stella" start time: Apr 11 15:24 MSK
 Output:
 ----------------------------------------------------------
 parsing succeeded!
@@ -1001,7 +1001,7 @@ On line 4 at position: 16
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-succ-2.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-succ-2.stella" end time: Apr 11 15:24 MSK
 "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-succ-2.stella" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1009,7 +1009,7 @@ Test Passed.
 15/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-succ-3.stella
 Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-succ-3.stella"
 Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-succ-3.stella" start time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-succ-3.stella" start time: Apr 11 15:24 MSK
 Output:
 ----------------------------------------------------------
 parsing succeeded!
@@ -1038,7 +1038,7 @@ On line 4 at position: 16
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-succ-3.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-succ-3.stella" end time: Apr 11 15:24 MSK
 "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/bad-succ-3.stella" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1046,7 +1046,7 @@ Test Passed.
 16/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/shadowed-variable-1.stella
 Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/shadowed-variable-1.stella"
 Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/shadowed-variable-1.stella" start time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/shadowed-variable-1.stella" start time: Apr 11 15:24 MSK
 Output:
 ----------------------------------------------------------
 parsing succeeded!
@@ -1130,7 +1130,7 @@ ERROR: This is not function. On line: 13 at position: 15
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/shadowed-variable-1.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/shadowed-variable-1.stella" end time: Apr 11 15:24 MSK
 "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/shadowed-variable-1.stella" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1138,7 +1138,7 @@ Test Passed.
 17/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/undefined-variable-1.stella
 Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/undefined-variable-1.stella"
 Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/undefined-variable-1.stella" start time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/undefined-variable-1.stella" start time: Apr 11 15:24 MSK
 Output:
 ----------------------------------------------------------
 parsing succeeded!
@@ -1167,7 +1167,7 @@ ERROR: The variable undefined, on line: 4 at position: 14
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/undefined-variable-1.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/undefined-variable-1.stella" end time: Apr 11 15:24 MSK
 "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/undefined-variable-1.stella" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1175,7 +1175,7 @@ Test Passed.
 18/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/undefined-variable-2.stella
 Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/undefined-variable-2.stella"
 Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/undefined-variable-2.stella" start time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/undefined-variable-2.stella" start time: Apr 11 15:24 MSK
 Output:
 ----------------------------------------------------------
 parsing succeeded!
@@ -1269,7 +1269,7 @@ ERROR: The variable undefined, on line: 13 at position: 27
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/undefined-variable-2.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/undefined-variable-2.stella" end time: Apr 11 15:24 MSK
 "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/ill-typed/undefined-variable-2.stella" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1277,7 +1277,7 @@ Test Passed.
 19/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/lists/ill-typed/bad-variants-1.stella
 Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/lists/ill-typed/bad-variants-1.stella"
 Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/lists/ill-typed/bad-variants-1.stella" start time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/lists/ill-typed/bad-variants-1.stella" start time: Apr 11 15:24 MSK
 Output:
 ----------------------------------------------------------
 parsing succeeded!
@@ -1317,7 +1317,7 @@ ERROR: This is not function. On line: 7 at position: 14
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/lists/ill-typed/bad-variants-1.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/lists/ill-typed/bad-variants-1.stella" end time: Apr 11 15:24 MSK
 "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/lists/ill-typed/bad-variants-1.stella" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1325,7 +1325,7 @@ Test Passed.
 20/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/pairs/ill-typed/bad-pairs-1.stella
 Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/pairs/ill-typed/bad-pairs-1.stella"
 Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/pairs/ill-typed/bad-pairs-1.stella" start time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/pairs/ill-typed/bad-pairs-1.stella" start time: Apr 11 15:24 MSK
 Output:
 ----------------------------------------------------------
 parsing succeeded!
@@ -1412,7 +1412,7 @@ ERROR: mismatch this params on line: 9
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/pairs/ill-typed/bad-pairs-1.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/pairs/ill-typed/bad-pairs-1.stella" end time: Apr 11 15:24 MSK
 "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/pairs/ill-typed/bad-pairs-1.stella" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1420,7 +1420,7 @@ Test Passed.
 21/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/records/ill-typed/bad-records-1.stella
 Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/records/ill-typed/bad-records-1.stella"
 Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/records/ill-typed/bad-records-1.stella" start time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/records/ill-typed/bad-records-1.stella" start time: Apr 11 15:24 MSK
 Output:
 ----------------------------------------------------------
 parsing succeeded!
@@ -1540,7 +1540,7 @@ ERROR: mismatch this params on line: 9
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/records/ill-typed/bad-records-1.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/records/ill-typed/bad-records-1.stella" end time: Apr 11 15:24 MSK
 "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/records/ill-typed/bad-records-1.stella" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1548,7 +1548,7 @@ Test Passed.
 22/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/sum-types/ill-typed/bad-sum-types-1.stella
 Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/sum-types/ill-typed/bad-sum-types-1.stella"
 Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/sum-types/ill-typed/bad-sum-types-1.stella" start time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/sum-types/ill-typed/bad-sum-types-1.stella" start time: Apr 11 15:24 MSK
 Output:
 ----------------------------------------------------------
 parsing succeeded!
@@ -1638,10 +1638,10 @@ visitVar
 Visiting StellaIdent: b
 ERROR: if condition type should be bool. On line:8 char:23
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/sum-types/ill-typed/bad-sum-types-1.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/sum-types/ill-typed/bad-sum-types-1.stella" end time: Apr 11 15:24 MSK
 "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/sum-types/ill-typed/bad-sum-types-1.stella" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1649,7 +1649,7 @@ Test Passed.
 23/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/tuples/ill-typed/bad-tuples-1.stella
 Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/tuples/ill-typed/bad-tuples-1.stella"
 Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/tuples/ill-typed/bad-tuples-1.stella" start time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/tuples/ill-typed/bad-tuples-1.stella" start time: Apr 11 15:24 MSK
 Output:
 ----------------------------------------------------------
 parsing succeeded!
@@ -1746,7 +1746,7 @@ ERROR: mismatch this params on line: 9
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/tuples/ill-typed/bad-tuples-1.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/tuples/ill-typed/bad-tuples-1.stella" end time: Apr 11 15:24 MSK
 "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/tuples/ill-typed/bad-tuples-1.stella" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1754,7 +1754,7 @@ Test Passed.
 24/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/ill-typed/bad-variants-1.stella
 Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/ill-typed/bad-variants-1.stella"
 Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/ill-typed/bad-variants-1.stella" start time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/ill-typed/bad-variants-1.stella" start time: Apr 11 15:24 MSK
 Output:
 ----------------------------------------------------------
 parsing succeeded!
@@ -1805,7 +1805,7 @@ ERROR: It's not sum type. On line6 at position: 9
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/ill-typed/bad-variants-1.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/ill-typed/bad-variants-1.stella" end time: Apr 11 15:24 MSK
 "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/ill-typed/bad-variants-1.stella" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -1813,7 +1813,7 @@ Test Passed.
 25/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/factorial.stella
 Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/factorial.stella"
 Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/factorial.stella" start time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/factorial.stella" start time: Apr 11 15:24 MSK
 Output:
 ----------------------------------------------------------
 parsing succeeded!
@@ -2029,7 +2029,7 @@ FIRST: main
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/factorial.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/factorial.stella" end time: Apr 11 15:24 MSK
 "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/factorial.stella" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2037,7 +2037,7 @@ Test Passed.
 26/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/higher-order-1.stella
 Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/higher-order-1.stella"
 Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/higher-order-1.stella" start time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/higher-order-1.stella" start time: Apr 11 15:24 MSK
 Output:
 ----------------------------------------------------------
 parsing succeeded!
@@ -2182,7 +2182,7 @@ FIRST: main
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/higher-order-1.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/higher-order-1.stella" end time: Apr 11 15:24 MSK
 "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/higher-order-1.stella" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2190,7 +2190,7 @@ Test Passed.
 27/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/increment_twice.stella
 Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/increment_twice.stella"
 Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/increment_twice.stella" start time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/increment_twice.stella" start time: Apr 11 15:24 MSK
 Output:
 ----------------------------------------------------------
 parsing succeeded!
@@ -2246,7 +2246,7 @@ FIRST: main
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/increment_twice.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/increment_twice.stella" end time: Apr 11 15:24 MSK
 "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/increment_twice.stella" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2254,7 +2254,7 @@ Test Passed.
 28/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/logical-operators.stella
 Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/logical-operators.stella"
 Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/logical-operators.stella" start time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/logical-operators.stella" start time: Apr 11 15:24 MSK
 Output:
 ----------------------------------------------------------
 parsing succeeded!
@@ -2513,7 +2513,7 @@ FIRST: main
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/logical-operators.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/logical-operators.stella" end time: Apr 11 15:24 MSK
 "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/logical-operators.stella" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2521,7 +2521,7 @@ Test Passed.
 29/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/squares.stella
 Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/squares.stella"
 Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/squares.stella" start time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/squares.stella" start time: Apr 11 15:24 MSK
 Output:
 ----------------------------------------------------------
 parsing succeeded!
@@ -2668,7 +2668,7 @@ FIRST: main
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/squares.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/squares.stella" end time: Apr 11 15:24 MSK
 "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/core/well-typed/squares.stella" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2676,7 +2676,7 @@ Test Passed.
 30/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/lists/well-typed/lists-1.stella
 Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/lists/well-typed/lists-1.stella"
 Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/lists/well-typed/lists-1.stella" start time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/lists/well-typed/lists-1.stella" start time: Apr 11 15:24 MSK
 Output:
 ----------------------------------------------------------
 parsing succeeded!
@@ -2715,7 +2715,7 @@ ERROR: This is not function. On line: 7 at position: 14
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Failed.
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/lists/well-typed/lists-1.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/lists/well-typed/lists-1.stella" end time: Apr 11 15:24 MSK
 "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/lists/well-typed/lists-1.stella" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2723,7 +2723,7 @@ Test Failed.
 31/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/pairs/well-typed/pairs-1.stella
 Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/pairs/well-typed/pairs-1.stella"
 Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/pairs/well-typed/pairs-1.stella" start time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/pairs/well-typed/pairs-1.stella" start time: Apr 11 15:24 MSK
 Output:
 ----------------------------------------------------------
 parsing succeeded!
@@ -2805,10 +2805,10 @@ Visiting StellaIdent: main
 FIRST: swap
 FIRST: main
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/pairs/well-typed/pairs-1.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/pairs/well-typed/pairs-1.stella" end time: Apr 11 15:24 MSK
 "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/pairs/well-typed/pairs-1.stella" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2816,7 +2816,7 @@ Test Passed.
 32/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/records/well-typed/records-1.stella
 Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/records/well-typed/records-1.stella"
 Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/records/well-typed/records-1.stella" start time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/records/well-typed/records-1.stella" start time: Apr 11 15:24 MSK
 Output:
 ----------------------------------------------------------
 parsing succeeded!
@@ -2934,7 +2934,7 @@ ERROR: mismatch this params on line: 9
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Failed.
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/records/well-typed/records-1.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/records/well-typed/records-1.stella" end time: Apr 11 15:24 MSK
 "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/records/well-typed/records-1.stella" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -2942,7 +2942,7 @@ Test Failed.
 33/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/sum-types/well-typed/sum-types-1.stella
 Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/sum-types/well-typed/sum-types-1.stella"
 Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/sum-types/well-typed/sum-types-1.stella" start time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/sum-types/well-typed/sum-types-1.stella" start time: Apr 11 15:24 MSK
 Output:
 ----------------------------------------------------------
 parsing succeeded!
@@ -3115,7 +3115,7 @@ FIRST: main
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/sum-types/well-typed/sum-types-1.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/sum-types/well-typed/sum-types-1.stella" end time: Apr 11 15:24 MSK
 "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/sum-types/well-typed/sum-types-1.stella" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -3123,7 +3123,7 @@ Test Passed.
 34/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/sum-types/well-typed/sum-types-2.stella
 Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/sum-types/well-typed/sum-types-2.stella"
 Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/sum-types/well-typed/sum-types-2.stella" start time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/sum-types/well-typed/sum-types-2.stella" start time: Apr 11 15:24 MSK
 Output:
 ----------------------------------------------------------
 parsing succeeded!
@@ -3296,7 +3296,7 @@ FIRST: main
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/sum-types/well-typed/sum-types-2.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/sum-types/well-typed/sum-types-2.stella" end time: Apr 11 15:24 MSK
 "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/sum-types/well-typed/sum-types-2.stella" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -3304,7 +3304,7 @@ Test Passed.
 35/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/tuples/well-typed/tuples-1.stella
 Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/tuples/well-typed/tuples-1.stella"
 Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/tuples/well-typed/tuples-1.stella" start time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/tuples/well-typed/tuples-1.stella" start time: Apr 11 15:24 MSK
 Output:
 ----------------------------------------------------------
 parsing succeeded!
@@ -3399,7 +3399,7 @@ FIRST: main
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/tuples/well-typed/tuples-1.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/tuples/well-typed/tuples-1.stella" end time: Apr 11 15:24 MSK
 "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/tuples/well-typed/tuples-1.stella" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -3407,7 +3407,7 @@ Test Passed.
 36/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/well-typed/variants-1.stella
 Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/well-typed/variants-1.stella"
 Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/well-typed/variants-1.stella" start time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/well-typed/variants-1.stella" start time: Apr 11 15:24 MSK
 Output:
 ----------------------------------------------------------
 parsing succeeded!
@@ -3455,10 +3455,10 @@ visitVar
 Visiting StellaIdent: x
 ERROR: It's not sum type. On line6 at position: 9
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Failed.
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/well-typed/variants-1.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/well-typed/variants-1.stella" end time: Apr 11 15:24 MSK
 "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/well-typed/variants-1.stella" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -3466,7 +3466,7 @@ Test Failed.
 37/37 Test: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/well-typed/variants-2.stella
 Command: "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug/stella-interpreter" "typecheck" "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/well-typed/variants-2.stella"
 Directory: /home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/cmake-build-debug
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/well-typed/variants-2.stella" start time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/well-typed/variants-2.stella" start time: Apr 11 15:24 MSK
 Output:
 ----------------------------------------------------------
 parsing succeeded!
@@ -3515,8 +3515,8 @@ ERROR: It's not sum type. On line5 at position: 9
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Failed.
-"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/well-typed/variants-2.stella" end time: Apr 08 04:18 MSK
+"/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/well-typed/variants-2.stella" end time: Apr 11 15:24 MSK
 "/home/bekzat/Documents/Innopolis/3_years/advance_compiler/week-2-typechecker-for-stella-with-simple-extensions-rkBekzat/tests/variants/well-typed/variants-2.stella" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Apr 08 04:18 MSK
+End testing: Apr 11 15:24 MSK

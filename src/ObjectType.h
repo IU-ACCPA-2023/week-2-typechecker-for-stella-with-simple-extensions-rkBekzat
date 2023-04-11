@@ -2,6 +2,8 @@
 // Created by bekzat on 29.03.23.
 //
 
+#include <unordered_map>
+
 namespace Stella{
     class ObjectType {
     public:

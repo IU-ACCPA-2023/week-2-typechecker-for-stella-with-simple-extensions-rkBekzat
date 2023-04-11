@@ -1157,7 +1157,8 @@ void Visiting::visitTypeRecord(TypeRecord *type_record)
     {
         /* Code For TypeUnit Goes Here */
         std::cout << "visitTypeUnit\n";
-        contexts.push(ObjectType(MyTypeTag::UnitTypeTag));
+        type_unit->accept(this);
+//        contexts.push(ObjectType(MyTypeTag::UnitTypeTag));
 
     }
 
