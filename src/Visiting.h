@@ -35,7 +35,6 @@ class Visiting : public Visitor
             std::vector<StellaIdent> removeIdent = scopedContext.top();
             for(int i = 0; i < removeIdent.size(); i++){
                 StellaIdent name = removeIdent[i];
-                std::cout << "FIRST: " << name << "\n";
                 contextIdent[name].pop();
             }
             scopedContext.pop();

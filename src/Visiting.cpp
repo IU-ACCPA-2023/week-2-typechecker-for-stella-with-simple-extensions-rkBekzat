@@ -90,9 +90,10 @@ namespace Stella
         if (decl_fun->expr_)
             decl_fun->expr_->accept(this);
 
-        std::cout << "Fucntion go out: "<< objFunc.returns[0].typeTag << " " << contexts.top().typeTag << "\n" ;
+        std::cout << "Fucntion go out: "<< objFunc.typeTag << " "<<  objFunc.returns[0].typeTag << " " << contexts.top().typeTag << "\n" ;
+        std::cout << "Function name: " << decl_fun->stellaident_ << "\n";
         // checking expected return type and actual return type same or not
-        if(checkReturn(contexts.top(), objFunc) ){
+        if(!checkReturn(contexts.top(), objFunc.returns[0]) ){
             std::cout << "ERROR: function should return another type\n";
             std::cout << "Line: " << decl_fun->expr_->line_number << "\n";
             exit(1);
@@ -251,60 +252,127 @@ namespace Stella
     {
         /* Code For LessThan Goes Here */
         std::cout << "LessThan\n";
+        int sizeBefore = contexts.size();
         if (less_than->expr_1)
             less_than->expr_1->accept(this);
+        if(contexts.size() - sizeBefore != 1 || contexts.top().typeTag != MyTypeTag::NatTypeTag){
+            std::cout << "ERROR: Should be Nat type, on line: " << less_than->line_number << "\n";
+            exit(1);
+        }
+        contexts.pop();
         if (less_than->expr_2)
             less_than->expr_2->accept(this);
+        if(contexts.size() - sizeBefore != 1 || contexts.top().typeTag != MyTypeTag::NatTypeTag){
+            std::cout << "ERROR: Should be Nat type, on line: " << less_than->line_number << "\n";
+            exit(1);
+        }
     }
 
     void Visiting::visitLessThanOrEqual(LessThanOrEqual *less_than_or_equal)
     {
         /* Code For LessThanOrEqual Goes Here */
         std::cout << "LessOrEqual\n";
+        int sizedBefore = contexts.size();
         if (less_than_or_equal->expr_1)
             less_than_or_equal->expr_1->accept(this);
+        if(contexts.size() - sizedBefore != 1 || contexts.top().typeTag != MyTypeTag::NatTypeTag){
+            std::cout << "ERROR: Should be Nat type, on line: " << less_than_or_equal->line_number << "\n";
+            exit(1);
+        }
+        contexts.pop();
         if (less_than_or_equal->expr_2)
             less_than_or_equal->expr_2->accept(this);
+        if(contexts.size() - sizedBefore != 1 || contexts.top().typeTag != MyTypeTag::NatTypeTag){
+            std::cout << "ERROR: Should be Nat type, on line: " << less_than_or_equal->line_number << "\n";
+            exit(1);
+        }
     }
 
     void Visiting::visitGreaterThan(GreaterThan *greater_than)
     {
         /* Code For GreaterThan Goes Here */
         std::cout << "visitGreaterThan\n";
+        int sizedBefore = contexts.size();
         if (greater_than->expr_1)
             greater_than->expr_1->accept(this);
+        if(contexts.size() - sizedBefore != 1 || contexts.top().typeTag != MyTypeTag::NatTypeTag){
+            std::cout << "ERROR: Should be Nat type, on line: " << greater_than->line_number << "\n";
+            exit(1);
+        }
+        contexts.pop();
+
         if (greater_than->expr_2)
             greater_than->expr_2->accept(this);
+        if(contexts.size() - sizedBefore != 1 || contexts.top().typeTag != MyTypeTag::NatTypeTag){
+            std::cout << "ERROR: Should be Nat type, on line: " << greater_than->line_number << "\n";
+            exit(1);
+        }
     }
 
     void Visiting::visitGreaterThanOrEqual(GreaterThanOrEqual *greater_than_or_equal)
     {
         /* Code For GreaterThanOrEqual Goes Here */
         std::cout << "GreaterOrEqual\n";
+        int sizedBefore = contexts.size();
         if (greater_than_or_equal->expr_1)
             greater_than_or_equal->expr_1->accept(this);
+        if(contexts.size() - sizedBefore != 1 || contexts.top().typeTag != MyTypeTag::NatTypeTag){
+            std::cout << "ERROR: Should be Nat type, on line: " << greater_than_or_equal->line_number << "\n";
+            exit(1);
+        }
+        contexts.pop();
+
         if (greater_than_or_equal->expr_2)
             greater_than_or_equal->expr_2->accept(this);
+        if(contexts.size() - sizedBefore != 1 || contexts.top().typeTag != MyTypeTag::NatTypeTag){
+            std::cout << "ERROR: Should be Nat type, on line: " << greater_than_or_equal->line_number << "\n";
+            exit(1);
+        }
     }
 
     void Visiting::visitEqual(Equal *equal)
     {
         /* Code For Equal Goes Here */
         std::cout << "Equal\n";
+        int sizedBefore = contexts.size();
         if (equal->expr_1)
             equal->expr_1->accept(this);
+        if(contexts.size() - sizedBefore != 1){
+            std::cout << "ERROR: Should be Nat type, on line: " << equal->line_number << "\n";
+            exit(1);
+        }
+        ObjectType first = contexts.top();
+        contexts.pop();
+
         if (equal->expr_2)
             equal->expr_2->accept(this);
+
+        if(contexts.size() - sizedBefore != 1 || contexts.top().typeTag != first.typeTag){
+            std::cout << "ERROR: Should be Nat type, on line: " << equal->line_number << "\n";
+            exit(1);
+        }
     }
 
     void Visiting::visitNotEqual(NotEqual *not_equal)
     {
         /* Code For NotEqual Goes Here */
         std::cout << "NotEqual ";
+        int sizedBefore = contexts.size();
         if (not_equal->expr_1)
             not_equal->expr_1->accept(this);
+        if(contexts.size() - sizedBefore != 1){
+            std::cout << "ERROR: Should be Nat type, on line: " << not_equal->line_number << "\n";
+            exit(1);
+        }
+        ObjectType first = contexts.top();
+        contexts.pop();
+
         if (not_equal->expr_2)
             not_equal->expr_2->accept(this);
+        if(contexts.size() - sizedBefore != 1 || contexts.top().typeTag != first.typeTag){
+            std::cout << "ERROR: Should be Nat type, on line: " << not_equal->line_number << "\n";
+            exit(1);
+        }
     }
 
     void Visiting::visitTypeAsc(TypeAsc *type_asc)
@@ -407,10 +475,22 @@ namespace Stella
     {
         /* Code For Add Goes Here */
         std::cout << "visitAdd\n";
+        int sizedBefore = contexts.size();
         if (add->expr_1)
             add->expr_1->accept(this);
+
+        if(contexts.size() - sizedBefore != 1 || contexts.top().typeTag != MyTypeTag::NatTypeTag){
+            std::cout << "ERROR: add operator work for NAT, on line: " << add->expr_1->line_number << "\n";
+            exit(1);
+        }
+        contexts.pop();
         if (add->expr_2)
             add->expr_2->accept(this);
+
+        if(contexts.size() - sizedBefore != 1 || contexts.top().typeTag != MyTypeTag::NatTypeTag){
+            std::cout << "ERROR: add operator work for NAT, on line: " << add->expr_1->line_number << "\n";
+            exit(1);
+        }
     }
 
     void Visiting::visitSubtract(Subtract *subtract)
@@ -500,6 +580,7 @@ namespace Stella
             std::cout << "ERROR: not enough params on line: " << application->line_number << "\n";
             exit(1);
         }
+        std::cout << "Before end application: " << obj.typeTag << " " << obj.returns[0].typeTag << "\n";
         // otherwise we add to context return type of function
         contexts.push(obj.returns[0]); // every time return should be 1 element hence I get 1 element
 //        std::cout << "AFTER APPLICATION\n";
@@ -699,7 +780,7 @@ namespace Stella
         objRec.typeTag = contexts.top().returns[0].params[0].typeTag;
         objRec.params.push_back(contexts.top());
         contexts.pop();
-        contexts.push(objRec); // add obj to contexts
+        contexts.push(objRec.returns[0]); // add obj to contexts
         decreaseScope();
     }
 
@@ -1110,7 +1191,7 @@ void Visiting::visitTypeRecord(TypeRecord *type_record)
         /* Code For TypeRecord Goes Here */
         std::cout << "visitTypeRecord\n";
 
-
+        contexts.push(ObjectType(RecordsTypeTag));
         if (type_record->listrecordfieldtype_)
             type_record->listrecordfieldtype_->accept(this);
     }
@@ -1189,9 +1270,12 @@ void Visiting::visitTypeRecord(TypeRecord *type_record)
         /* Code For ARecordFieldType Goes Here */
         std::cout << "visitARecordFieldType\n";
 
-        visitStellaIdent(a_record_field_type->stellaident_);
+//        visitStellaIdent(a_record_field_type->stellaident_);
         if (a_record_field_type->type_)
             a_record_field_type->type_->accept(this);
+        ObjectType field = contexts.top();
+        contexts.pop();
+        contexts.top().add(a_record_field_type->stellaident_, field);
     }
 
     void Visiting::visitATyping(ATyping *a_typing)
