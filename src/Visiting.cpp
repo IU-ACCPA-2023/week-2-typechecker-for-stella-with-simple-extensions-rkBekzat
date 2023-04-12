@@ -642,7 +642,7 @@ namespace Stella
         if (inl->expr_)
         inl->expr_->accept(this);
         objectSum.params.push_back(contexts.top());
-        objectSum.params.push_back(ObjectType(MyTypeTag::UndefinedTag));
+        objectSum.params.push_back(ObjectType(MyTypeTag::UnitTypeTag));
         contexts.pop();
         contexts.push(objectSum);
     }
@@ -652,7 +652,7 @@ namespace Stella
         /* Code For Inr Goes Here */
         std::cout << "visitInr\n";
         ObjectType objectSum(MyTypeTag::SumTypeTag);
-        objectSum.params.push_back(ObjectType(MyTypeTag::UndefinedTag));
+        objectSum.params.push_back(ObjectType(MyTypeTag::UnitTypeTag));
         if (inr->expr_)
         inr->expr_->accept(this);
         objectSum.params.push_back(contexts.top());
@@ -915,15 +915,15 @@ namespace Stella
     {
         /* Code For AMatchCase Goes Here */
         std::cout << "visitAMatchCase\n";
+        increaseScope();
 
+        ObjectType objSum = contexts.top();
         if (a_match_case->pattern_)
             a_match_case->pattern_->accept(this);
-        std::cout << "BEFORE EXPR:\n" << contexts.top().typeTag << "\n\n";
-        ObjectType objSum = contexts.top();
+
         int sizeBefore = contexts.size();
         if (a_match_case->expr_)
             a_match_case->expr_->accept(this);
-        std::cout << "MAY BE RETURN TYPE:\n";
         while (sizeBefore < contexts.size()){
             objSum.returns.push_back(contexts.top());
             contexts.pop();
@@ -932,6 +932,7 @@ namespace Stella
         contexts.pop();
         contexts.push(objSum);
         std::cout << "AFTER EXPR: " << sizeBefore <<" "<<contexts.size()  << " " << contexts.top().typeTag<< "\n";
+        decreaseScope();
     }
 
     void Visiting::visitNoTyping(NoTyping *no_typing)
@@ -992,7 +993,10 @@ namespace Stella
     {
         /* Code For PatternInl Goes Here */
         std::cout << "visitPatternInl\n";
-        int sizedBefore = contexts.size();
+        if(contexts.top().typeTag != MyTypeTag::SumTypeTag){
+            std::cout << "ERROR: should be sum types, on line: " << pattern_inl->line_number << "\n";
+            exit(1);
+        }
         ObjectType objSumL = contexts.top();
         contexts.push(objSumL.params[0]);
         if (pattern_inl->pattern_)
@@ -1003,8 +1007,13 @@ namespace Stella
     {
         /* Code For PatternInr Goes Here */
         std::cout << "visitPatternInr\n";
+        if(contexts.top().typeTag != MyTypeTag::SumTypeTag){
+            std::cout << "ERROR: should be sum types, on line: " << pattern_inr->line_number << "\n";
+            exit(1);
+        }
         ObjectType objSumR = contexts.top();
         contexts.push(objSumR.params[1]);
+
         if (pattern_inr->pattern_)
         pattern_inr->pattern_->accept(this);
     }
@@ -1013,6 +1022,10 @@ namespace Stella
     {
         /* Code For PatternTuple Goes Here */
         std::cout << "visitPatternTuple\n";
+        if(contexts.top().typeTag != MyTypeTag::ListTypeTag){
+            std::cout << "ERROR: should be list, on line: " << pattern_tuple->line_number << "\n";
+            exit(1);
+        }
 
         if (pattern_tuple->listpattern_)
             pattern_tuple->listpattern_->accept(this);
@@ -1022,6 +1035,10 @@ namespace Stella
     {
         /* Code For PatternRecord Goes Here */
         std::cout << "visitPatternRecord\n";
+        if(contexts.top().typeTag != MyTypeTag::ListTypeTag){
+            std::cout << "ERROR: should be list, on line: " << pattern_record->line_number << "\n";
+            exit(1);
+        }
 
         if (pattern_record->listlabelledpattern_)
             pattern_record->listlabelledpattern_->accept(this);
@@ -1031,7 +1048,10 @@ namespace Stella
     {
         /* Code For PatternList Goes Here */
         std::cout << "visitPatternList\n";
-
+        if(contexts.top().typeTag != MyTypeTag::ListTypeTag){
+            std::cout << "ERROR: should be list, on line: " << pattern_list->line_number << "\n";
+            exit(1);
+        }
         if (pattern_list->listpattern_)
             pattern_list->listpattern_->accept(this);
     }
@@ -1051,26 +1071,43 @@ namespace Stella
     {
         /* Code For PatternFalse Goes Here */
         std::cout << "visitPatternFalse\n";
+        if(contexts.top().typeTag != MyTypeTag::BoolTypeTag){
+            std::cout << "ERROR: The pattern isn't boolean, on line: " << pattern_false->line_number << "\n";
+            exit(1);
+        }
     }
 
     void Visiting::visitPatternTrue(PatternTrue *pattern_true)
     {
         /* Code For PatternTrue Goes Here */
         std::cout << "visitPatternTrue\n";
+        if(contexts.top().typeTag != MyTypeTag::BoolTypeTag){
+            std::cout << "ERROR: The pattern isn't boolean, on line: " << pattern_true->line_number << "\n";
+            std::cout << contexts.top().typeTag << "\n";
+            exit(1);
+        }
     }
 
     void Visiting::visitPatternUnit(PatternUnit *pattern_unit)
     {
         /* Code For PatternUnit Goes Here */
         std::cout << "visitPatternUnit\n";
+        if(contexts.top().typeTag != MyTypeTag::UnitTypeTag){
+            std::cout << "ERROR: The pattern isn't boolean, on line: " << pattern_unit->line_number << "\n";
+            exit(1);
+        }
     }
 
     void Visiting::visitPatternInt(PatternInt *pattern_int)
     {
         /* Code For PatternInt Goes Here */
         std::cout << "visitPatternInt\n";
+        if(contexts.top().typeTag != MyTypeTag::NatTypeTag){
+            std::cout << "ERROR: The pattern isn't boolean, on line: " << pattern_int->line_number << "\n";
+            exit(1);
+        }
 
-        visitInteger(pattern_int->integer_);
+//        visitInteger(pattern_int->integer_);
     }
 
     void Visiting::visitPatternSucc(PatternSucc *pattern_succ)
@@ -1085,13 +1122,10 @@ namespace Stella
     void Visiting::visitPatternVar(PatternVar *pattern_var)
     {
         /* Code For PatternVar Goes Here */
-        std::cout << "visitPatternVar\n";
-        std::cout << "ASSIGN: " << pattern_var->stellaident_ << " " << contexts.top().typeTag  << "\n";
+//        std::cout << "visitPatternVar\n";
+//        std::cout << "ASSIGN: " << pattern_var->stellaident_ << " " << contexts.top().typeTag  << "\n";
         contextIdent[pattern_var->stellaident_].push(contexts.top());
         scopedContext.top().push_back(pattern_var->stellaident_);
-        contexts.pop();
-        std::cout << "NEXT: "  << contexts.top().typeTag << "\n\n";
-        visitStellaIdent(pattern_var->stellaident_);
         contexts.pop();
     }
 
@@ -1388,7 +1422,9 @@ void Visiting::visitTypeRecord(TypeRecord *type_record)
         std::cout << "visitListMatchCase: \n";
         for (ListMatchCase::iterator i = list_match_case->begin(); i != list_match_case->end(); ++i)
         {
+            std::cout << "NEW MATCH " << contexts.top().typeTag << "\n";
             (*i)->accept(this);
+            std::cout << "END MATCH " << contexts.top().typeTag << "\n";
         }
     }
 
