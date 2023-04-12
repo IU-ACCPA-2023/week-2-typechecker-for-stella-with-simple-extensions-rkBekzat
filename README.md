@@ -64,3 +64,60 @@ The input program from the interpreter is passed directly to the `typecheckProgr
 
 You must extend the existing files to perform the required actions.
 If you need to add additional files, don't forget to add them to the [CMake file](CMakeLists.txt) (in the SRCS variable) to include them in the build process. 
+
+
+
+### My Solution
+
+I create class ObjectType where I store all object types such as int, bool, function, recursion.
+This class contain:
+- typeTag - is enum type which determine type of object
+- params - is list of self object, It's for functions and recursion. It's show list of accept types
+- returns  - is list of self object which should return, but always we have only one element. Actually we can use one ObjectType, but at the begining I have trouble and then decide to use vector
+
+In class Visiting I add new atributes:
+
+- contextIdent - it's map which return type for identifiers
+- expected_type - it's temporary Object type, which help to compare actual and expected types
+- contexts - It's stack where store objectTypes when traversing AST. When we come in new node in AST I add the type to context, and when go out from this node in ```contexts.top()``` will be type of this node which I leave . So I will work with this object ```contexts.top()```.
+
+### How I run the code
+
+Sanzhar Zhainalin help me to configure CMakeList.txt, this file will run all test. You need just click one button run all test 
+<img src="button.png">
+
+#### Show Errors:
+
+When running some ill-typed test, the program show not exact line where mistakes, but it's not work proper.
+
+
+### Idea
+
+The idea of using enum and store object inspired by Yaroslav Kim. I asked advice from Yaroslav how to better store objects.
+
+### Tests
+ill-typed:
+- bad-if-and-undefined-variable-1.stella
+- function-mismatch.stella
+
+well-typed
+- abstract-functions.stella
+- simple-succ.stella 
+
+It's from previous assignment
+
+
+Also I added the test from site stella, also I little modified and add:
+
+sum-types/well-typed/
+- sample-1.stella
+- sample-2.stella
+
+sum-types/ill-typed/
+- mismatch-arg.stella
+
+unit/well-typed
+- sample.stella
+
+unit/ill-typed
+- mismatch.stella
