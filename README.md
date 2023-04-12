@@ -81,6 +81,20 @@ In class Visiting I add new atributes:
 - expected_type - it's temporary Object type, which help to compare actual and expected types
 - contexts - It's stack where store objectTypes when traversing AST. When we come in new node in AST I add the type to context, and when go out from this node in ```contexts.top()``` will be type of this node which I leave . So I will work with this object ```contexts.top()```.
 
+#### Updates
+
+In objectType class added new fields:
+- records - it's for recores, where store list of pair, where first is identifier and second value. At the begining I want use unordered_map but I got errors and I can't solved them.
+
+In enums I added new fields such as UnitTypeTag,  TupleTypeTag,  SumTypeTag,  ListTypeTag,  RecordsTypeTag,
+
+Tuples:
+- To store values in tuple, I use params vector where store type of every object.
+
+Sum types:
+...
+
+
 ### How I run the code
 
 Sanzhar Zhainalin help me to configure CMakeList.txt, this file will run all test. You need just click one button run all test 
