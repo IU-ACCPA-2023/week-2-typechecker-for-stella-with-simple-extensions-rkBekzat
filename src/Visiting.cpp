@@ -425,6 +425,7 @@ namespace Stella
             objTuple.params.push_back(contexts.top());
             contexts.pop();
         }
+
         contexts.push(objTuple);
     }
 
@@ -432,6 +433,7 @@ namespace Stella
     {
         /* Code For Record Goes Here */
         std::cout << "visitRecord\n";
+        contexts.push(ObjectType(MyTypeTag::RecordsTypeTag));
         if (record->listbinding_)
             record->listbinding_->accept(this);
     }
@@ -813,7 +815,15 @@ namespace Stella
 
         if (dot_record->expr_)
             dot_record->expr_->accept(this);
-        visitStellaIdent(dot_record->stellaident_);
+        std::cout << "Before Binding: " << printer.print(dot_record) << "\n";
+        ObjectType objDot = contexts.top();
+        contexts.pop();
+        if(!objDot.contain(dot_record->stellaident_)){
+            std::cout << "ERROR: Record hasn't field " << dot_record->stellaident_ << " on line: " << dot_record->line_number << "\n";
+            exit(1);
+        }
+        contexts.push(objDot.get(dot_record->stellaident_));
+//        visitStellaIdent(dot_record->stellaident_);
     }
 
     void Visiting::visitDotTuple(DotTuple *dot_tuple)
@@ -825,6 +835,7 @@ namespace Stella
             dot_tuple->expr_->accept(this);
 
         if (contexts.top().typeTag != MyTypeTag::TupleTypeTag){
+            std::cout << contexts.top().typeTag << "  ";
             std::cout << "ERROR: it's not tuple, on line: " << dot_tuple->line_number << " at position: " << dot_tuple->char_number << "\n";
             exit(1);
         }
@@ -843,7 +854,9 @@ namespace Stella
             std::cout << "ERROR: Out of range\n";
             exit(1);
         }
-        ObjectType newObj = contexts.top().params[position-1];
+        int reversed = contexts.top().params.size() - position; // cause our params reversed
+        ObjectType newObj = contexts.top().params[reversed];
+        std::cout << "\n\n";
         contexts.pop();
         contexts.push(newObj);
     }
@@ -1097,9 +1110,12 @@ namespace Stella
         /* Code For ABinding Goes Here */
         std::cout << "visitABinding\n";
 
-        visitStellaIdent(a_binding->stellaident_);
+//        visitStellaIdent(a_binding->stellaident_);
         if (a_binding->expr_)
             a_binding->expr_->accept(this);
+        ObjectType recordField = contexts.top();
+        contexts.pop();
+        contexts.top().add(a_binding->stellaident_, recordField);
     }
 
     void Visiting::visitSequence(Sequence *sequence)
@@ -1238,8 +1254,8 @@ void Visiting::visitTypeRecord(TypeRecord *type_record)
     {
         /* Code For TypeUnit Goes Here */
         std::cout << "visitTypeUnit\n";
-        type_unit->accept(this);
-//        contexts.push(ObjectType(MyTypeTag::UnitTypeTag));
+//        type_unit->accept(this);
+        contexts.push(ObjectType(MyTypeTag::UnitTypeTag));
 
     }
 
